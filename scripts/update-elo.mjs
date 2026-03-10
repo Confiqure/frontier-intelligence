@@ -156,7 +156,7 @@ try {
 const arenaMap = new Map();
 
 // Format A
-const TABLE_ROW = /\|\s*(\d+)\s*\|[^|]+\|([^|]+)\|\s*(\d{4})\s*±/g;
+const TABLE_ROW = /(?:^|\|)\s*(\d+)\s*\|[^|]+\|([^|]+)\|\s*(\d{4})\s*±/gm;
 let m;
 while ((m = TABLE_ROW.exec(arenaText)) !== null) {
   const rank = parseInt(m[1], 10);

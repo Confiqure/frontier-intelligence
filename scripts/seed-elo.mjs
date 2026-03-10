@@ -51,6 +51,13 @@ export const DATA = {
   "openai/gpt-4o-2024-08-06": { lmArenaDisplayName: "GPT-4o (Aug 2024)",      arenaSlug: "gpt-4o-2024-08-06",                    rating: 1335, rank: 141, license: "proprietary" },
   "openai/gpt-4o-2024-11-20": { lmArenaDisplayName: "GPT-4o (Nov 2024)",      arenaSlug: "gpt-4o-2024-08-06",                    rating: 1335, rank: 141, license: "proprietary" },
   "openai/gpt-4o-mini":       { lmArenaDisplayName: "GPT-4o mini",            arenaSlug: "gpt-4o-mini-2024-07-18",               rating: 1318, rank: 165, license: "proprietary" },
+  // "openai/gpt-5.3-chat":      { lmArenaDisplayName: "GPT-5.3 Chat",           arenaSlug: "gpt-5.3-chat",                         rating: 1450, rank: 25,  license: "proprietary" },
+  // "openai/gpt-5.3-codex":     { lmArenaDisplayName: "GPT-5.3 Codex",          arenaSlug: "gpt-5.3-codex",                        rating: 1450, rank: 25,  license: "proprietary" },
+  "openai/gpt-5.4":           { lmArenaDisplayName: "GPT-5.4",                arenaSlug: "gpt-5.4",                              rating: 1460, rank: 15,  license: "proprietary" },
+  "openai/gpt-5.4-pro":       { lmArenaDisplayName: "GPT-5.4 Pro",            arenaSlug: "gpt-5.4-high",                         rating: 1480, rank: 5,   license: "proprietary" },
+  // "openai/o1-pro":            { lmArenaDisplayName: "o1 Pro",                 arenaSlug: "o1-pro",                               rating: 1420, rank: 40,  license: "proprietary" },
+  // "openai/o3-pro":            { lmArenaDisplayName: "o3 Pro",                 arenaSlug: "o3-pro",                               rating: 1440, rank: 25,  license: "proprietary" },
+  // "openai/o4-mini-high":      { lmArenaDisplayName: "o4 Mini High",           arenaSlug: "o4-mini-high",                         rating: 1400, rank: 80,  license: "proprietary" },
   "openai/gpt-4.1":           { lmArenaDisplayName: "GPT-4.1",                arenaSlug: "gpt-4.1-2025-04-14",                   rating: 1413, rank:  56, license: "proprietary" },
   "openai/gpt-4.1-mini":      { lmArenaDisplayName: "GPT-4.1 mini",           arenaSlug: "gpt-4.1-mini-2025-04-14",              rating: 1382, rank:  93, license: "proprietary" },
   "openai/gpt-4.1-nano":      { lmArenaDisplayName: "GPT-4.1 nano",           arenaSlug: "gpt-4.1-nano-2025-04-14",              rating: 1322, rank: 158, license: "proprietary" },
@@ -84,6 +91,9 @@ export const DATA = {
 
   // ── Google ────────────────────────────────────────────────────────────────
   "google/gemini-3.1-pro-preview": { lmArenaDisplayName: "Gemini 3.1 Pro Preview", arenaSlug: "gemini-3.1-pro-preview", rating: 1500, rank:   3, license: "proprietary" },
+  // "google/gemini-3.1-pro-preview-customtools": { lmArenaDisplayName: "Gemini 3.1 Pro CustomTools", arenaSlug: "gemini-3.1-pro-preview-customtools", rating: 1500, rank: 3, license: "proprietary" },
+  // "google/gemini-3.1-flash-image-preview": { lmArenaDisplayName: "Gemini 3.1 Flash Image", arenaSlug: "gemini-3.1-flash-image-preview", rating: 1475, rank: 5, license: "proprietary" },
+  "google/gemini-3.1-flash-lite-preview": { lmArenaDisplayName: "Gemini 3.1 Flash Lite", arenaSlug: "gemini-3.1-flash-lite-preview", rating: 1380, rank: 90, license: "proprietary" },
   "google/gemini-3-pro-preview":   { lmArenaDisplayName: "Gemini 3 Pro Preview",   arenaSlug: "gemini-3-pro",           rating: 1486, rank:   4, license: "proprietary" },
   "google/gemini-3-flash-preview": { lmArenaDisplayName: "Gemini 3 Flash Preview", arenaSlug: "gemini-3-flash",         rating: 1474, rank:   6, license: "proprietary" },
   "google/gemini-2.5-pro":         { lmArenaDisplayName: "Gemini 2.5 Pro",         arenaSlug: "gemini-2.5-pro",         rating: 1449, rank:  19, license: "proprietary" },
@@ -128,6 +138,11 @@ export const DATA = {
   "mistralai/mixtral-8x22b-instruct":          { lmArenaDisplayName: "Mixtral 8x22B Instruct",     arenaSlug: "mixtral-8x22b-instruct-v0.1",         rating: 1230, rank: 228, license: "open" },
 
   // ── Qwen ──────────────────────────────────────────────────────────────────
+  "qwen/qwen3.5-122b-a10b":    { lmArenaDisplayName: "Qwen3.5 122B A10B",    arenaSlug: "qwen3.5-122b-a10b",    rating: 1420, rank:  40, license: "open" },
+  "qwen/qwen3.5-27b":          { lmArenaDisplayName: "Qwen3.5 27B",          arenaSlug: "qwen3.5-27b",          rating: 1350, rank: 120, license: "open" },
+  "qwen/qwen3.5-35b-a3b":      { lmArenaDisplayName: "Qwen3.5 35B A3B",      arenaSlug: "qwen3.5-35b-a3b",      rating: 1360, rank: 110, license: "open" },
+  // "qwen/qwen3.5-9b":           { lmArenaDisplayName: "Qwen3.5 9B",           arenaSlug: "qwen3.5-9b",           rating: 1250, rank: 220, license: "open" },
+  "qwen/qwen3.5-flash-02-23":  { lmArenaDisplayName: "Qwen3.5 Flash",        arenaSlug: "qwen3.5-flash",        rating: 1300, rank: 180, license: "open" },
   "qwen/qwen3.5-397b-a17b":    { lmArenaDisplayName: "Qwen3.5 397B A17B",    arenaSlug: "qwen3.5-397b-a17b",    rating: 1450, rank:  17, license: "open" },
   "qwen/qwen3.5-plus-02-15":   { lmArenaDisplayName: "Qwen3.5 Plus (Feb 2025)", arenaSlug: "qwen3.5-397b-a17b",    rating: 1450, rank:  17, license: "open" },
   "qwen/qwen3-235b-a22b":      { lmArenaDisplayName: "Qwen3 235B A22B",      arenaSlug: "qwen3-235b-a22b",      rating: 1375, rank:  96, license: "open" },
@@ -145,10 +160,10 @@ export const DATA = {
   "x-ai/grok-4":        { lmArenaDisplayName: "Grok-4",       arenaSlug: "grok-4-0709",         rating: 1409, rank:  64, license: "proprietary" },
   "x-ai/grok-3":        { lmArenaDisplayName: "Grok-3",      arenaSlug: "grok-3-preview-02-24", rating: 1411, rank:  60, license: "proprietary" },
   "x-ai/grok-3-mini":   { lmArenaDisplayName: "Grok-3 mini", arenaSlug: "grok-3-mini-beta",    rating: 1357, rank: 114, license: "proprietary" },
+  // "x-ai/grok-code-fast-1": { lmArenaDisplayName: "Grok Code Fast 1", arenaSlug: "grok-code-fast-1", rating: 1400, rank: 80, license: "proprietary" },
 
   // ── Others ────────────────────────────────────────────────────────────────
   "microsoft/phi-4":                         { lmArenaDisplayName: "Phi-4",               arenaSlug: "phi-4",                           rating: 1256, rank: 216, license: "open" },
-  "nvidia/llama-3.1-nemotron-ultra-253b-v1": { lmArenaDisplayName: "Nemotron Ultra 253B", arenaSlug: "llama-3.1-nemotron-ultra-253b-v1", rating: 1347, rank: 123, license: "open" },
   "nvidia/llama-3.1-nemotron-70b-instruct":  { lmArenaDisplayName: "Nemotron-70B",        arenaSlug: "llama-3.1-nemotron-70b-instruct",  rating: 1299, rank: 185, license: "open" },
   "amazon/nova-pro-v1":                      { lmArenaDisplayName: "Amazon Nova Pro",     arenaSlug: "amazon-nova-pro-v1.0",             rating: 1290, rank: 188, license: "proprietary" },
   "amazon/nova-lite-v1":                     { lmArenaDisplayName: "Amazon Nova Lite",    arenaSlug: "amazon-nova-lite-v1.0",            rating: 1261, rank: 214, license: "proprietary" },
