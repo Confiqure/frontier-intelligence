@@ -199,6 +199,8 @@ let updated = 0;
 let unchanged = 0;
 const notFound = [];
 
+const todayStr = new Date().toISOString().slice(0, 10);
+
 for (const [slug, entry] of Object.entries(eloScores)) {
   if (slug === "_meta") continue;
   const arenaSlug = entry.arenaSlug;
@@ -208,18 +210,52 @@ for (const [slug, entry] of Object.entries(eloScores)) {
   }
 
   const live = arenaMap.get(arenaSlug);
+
+  // Backwards compatibility: ensure we have a history array
+  if (!entry.history) {
+    entry.history = [
+      {
+        date: existingMeta.eloRefreshedAt?.slice(0, 10) || todayStr,
+        rating: entry.rating || 1000,
+        rank: entry.rank || 999,
+      },
+    ];
+  }
+
+  const latestEntry = entry.history[entry.history.length - 1];
+
   if (!live) {
-    notFound.push({ slug, arenaSlug, oldRating: entry.rating });
+    notFound.push({ slug, arenaSlug, oldRating: latestEntry.rating });
     unchanged++;
     continue;
   }
 
-  if (live.rating !== entry.rating || live.rank !== entry.rank) {
+  let modified = false;
+
+  if (live.rating !== latestEntry.rating || live.rank !== latestEntry.rank) {
     console.log(
-      `  ✦ ${slug.padEnd(50)} ELO ${entry.rating} → ${live.rating}  rank ${entry.rank} → ${live.rank}`
+      `  ✦ ${slug.padEnd(50)} ELO ${latestEntry.rating} → ${live.rating}  rank ${latestEntry.rank} → ${live.rank}`
     );
+
+    if (latestEntry.date === todayStr) {
+      latestEntry.rating = live.rating;
+      latestEntry.rank = live.rank;
+    } else {
+      entry.history.push({ date: todayStr, rating: live.rating, rank: live.rank });
+    }
+
+    // Maintain flat fields for backwards compatibility during transition
     entry.rating = live.rating;
     entry.rank = live.rank;
+    modified = true;
+  }
+
+  if (entry.lastActiveDate !== todayStr) {
+    entry.lastActiveDate = todayStr;
+    modified = true;
+  }
+
+  if (modified) {
     updated++;
   } else {
     unchanged++;

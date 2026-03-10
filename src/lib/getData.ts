@@ -19,9 +19,19 @@ interface OpenRouterResponse {
 
 type EloEntry = {
   lmArenaDisplayName?: string;
-  rating: number;
-  rank: number;
+  arenaSlug?: string;
   license: string;
+  discoveryDate?: string;
+  isDeprecated?: boolean;
+  lastActiveDate?: string;
+  history?: Array<{
+    date: string;
+    rating: number;
+    rank: number;
+  }>;
+  // Legacy fields for transition
+  rating?: number;
+  rank?: number;
 };
 
 const rawScores = eloScores as unknown as Record<
@@ -73,20 +83,24 @@ export async function getLiveModels(): Promise<{
     const elo = ELO_MAP[slug];
     const author = slug.split("/")[0];
 
-    if (elo) {
+    if (elo && (elo.rating || elo.history?.length)) {
       // Ranked model — full arena ELO data available
       const authorDisplay = AUTHOR_DISPLAY_NAMES[author] ?? author;
+      const latestHistory = elo.history?.[elo.history.length - 1];
+      const rating = latestHistory?.rating ?? elo.rating ?? 0;
+      const rank = latestHistory?.rank ?? elo.rank ?? 0;
+
       results.push({
         openRouterSlug: slug,
         lmArenaDisplayName: elo.lmArenaDisplayName,
         author: authorDisplay,
         pricingPrompt: or.pricing.prompt,
         pricingCompletion: or.pricing.completion,
-        rating: elo.rating,
+        rating,
         createdAt: new Date(or.created * 1000).toISOString(),
         contextLength: or.context_length,
         license: elo.license,
-        rank: elo.rank,
+        rank,
         ratingSource: "arena",
       });
     } else if (TRACKED_SLUG_PREFIXES.some((p) => slug.startsWith(p)) && !EXCLUDED_SLUGS.has(slug)) {

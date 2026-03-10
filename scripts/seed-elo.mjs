@@ -190,10 +190,11 @@ if (isMain) {
     process.exit(1);
   }
 
-  // Preserve existing eloRefreshedAt if present (only --arena updates it)
+  // Preserve existing meta and gracefully merge to persist history
+  let existing = {};
   let existingEloRefreshedAt = null;
   try {
-    const existing = JSON.parse(readFileSync(OUT, "utf8"));
+    existing = JSON.parse(readFileSync(OUT, "utf8"));
     existingEloRefreshedAt = existing._meta?.eloRefreshedAt ?? null;
   } catch {
     // file doesn't exist yet — fine
@@ -202,8 +203,54 @@ if (isMain) {
   const now = new Date().toISOString();
   const output = {
     _meta: { seedWrittenAt: now, eloRefreshedAt: existingEloRefreshedAt },
-    ...DATA,
   };
+
+  const fmtDateOnly = (iso) => (iso ? iso.slice(0, 10) : now.slice(0, 10));
+
+  for (const [slug, newEntry] of Object.entries(DATA)) {
+    const prev = existing[slug];
+
+    let history = prev?.history || [];
+    if (history.length === 0 && prev?.rating) {
+      // Migrated from old flat format
+      history = [
+        {
+          date: fmtDateOnly(existingEloRefreshedAt),
+          rating: prev.rating,
+          rank: prev.rank,
+        },
+      ];
+    } else if (history.length === 0) {
+      // Completely new model initialized from seed
+      history = [
+        {
+          date: fmtDateOnly(now),
+          rating: newEntry.rating,
+          rank: newEntry.rank,
+        },
+      ];
+    }
+
+    const discoveryDate = prev?.discoveryDate || history[0]?.date || fmtDateOnly(now);
+    const lastActiveDate = prev?.lastActiveDate || fmtDateOnly(existingEloRefreshedAt || now);
+
+    output[slug] = {
+      lmArenaDisplayName: newEntry.lmArenaDisplayName,
+      arenaSlug: newEntry.arenaSlug,
+      license: newEntry.license,
+      discoveryDate,
+      isDeprecated: prev?.isDeprecated || false,
+      lastActiveDate,
+      history,
+    };
+  }
+
+  // Preserve deprecated slugs (ones in `existing` but removed from `DATA`)
+  for (const [slug, prev] of Object.entries(existing)) {
+    if (slug === "_meta" || output[slug]) continue;
+    output[slug] = { ...prev, isDeprecated: true };
+  }
+
   writeFileSync(OUT, JSON.stringify(output, null, 2) + "\n");
 
   const fmtDate = (iso) => {
