@@ -56,6 +56,17 @@ type AugmentedDataset = ChartDataset<"scatter", ChartPoint[]> & {
   _origHoverRadius?: number | number[];
 };
 
+function formatDate(dateStr: string, format: "short" | "long" = "short") {
+  const [yyyy, mm, dd] = dateStr.split("-");
+  const d = new Date(Date.UTC(parseInt(yyyy), parseInt(mm) - 1, parseInt(dd || "1")));
+  return d.toLocaleDateString("en-US", {
+    timeZone: "UTC",
+    month: format === "long" ? "long" : "short",
+    year: "numeric",
+    ...(format === "long" && dd ? { day: "numeric" } : {}),
+  });
+}
+
 // Adds 30px of space below the legend
 const legendMargin: Plugin<"scatter"> = {
   id: "legendMargin",
@@ -70,8 +81,58 @@ const legendMargin: Plugin<"scatter"> = {
   },
 };
 
-function processModels(rawData: ModelData[], ratio: number, openOnly: boolean): ProcessedModel[] {
+function processModels(
+  rawData: ModelData[],
+  ratio: number,
+  openOnly: boolean,
+  targetDate: string
+): ProcessedModel[] {
   return rawData
+    .map((d) => {
+      // Filter out models that didn't exist yet
+      // If createdAt is "YYYY-MM-DD...", we can just string compare the first 10 chars
+      const createdDate = d.createdAt ? d.createdAt.slice(0, 10) : "";
+      if (createdDate && createdDate > targetDate) {
+        return null;
+      }
+
+      let resolvedModel = { ...d };
+
+      if (d.history && d.history.length > 0) {
+        let validEntry = null;
+        for (let i = d.history.length - 1; i >= 0; i--) {
+          if (d.history[i].date <= targetDate) {
+            validEntry = d.history[i];
+            break;
+          }
+        }
+
+        if (validEntry) {
+          resolvedModel.rating = validEntry.rating;
+          resolvedModel.rank = validEntry.rank;
+          if (validEntry.pricingPrompt) resolvedModel.pricingPrompt = validEntry.pricingPrompt;
+          if (validEntry.pricingCompletion)
+            resolvedModel.pricingCompletion = validEntry.pricingCompletion;
+          if (validEntry.contextLength) resolvedModel.contextLength = validEntry.contextLength;
+        } else if (d.ratingSource === "arena") {
+          // Fall back to the very first history entry instead of filtering out
+          // This ensures that on the exact launch day, or if there's a slight
+          // timezone mismatch between createdAt and history[0].date, it still renders.
+          const fallbackEntry = d.history[0];
+          resolvedModel.rating = fallbackEntry.rating;
+          resolvedModel.rank = fallbackEntry.rank;
+          if (fallbackEntry.pricingPrompt)
+            resolvedModel.pricingPrompt = fallbackEntry.pricingPrompt;
+          if (fallbackEntry.pricingCompletion)
+            resolvedModel.pricingCompletion = fallbackEntry.pricingCompletion;
+          if (fallbackEntry.contextLength)
+            resolvedModel.contextLength = fallbackEntry.contextLength;
+        }
+      }
+
+      return resolvedModel;
+    })
+    .filter((d): d is ModelData => d !== null)
     .filter(
       (d) =>
         d.ratingSource !== "unranked" && // exclude unranked; treat undefined as arena
@@ -95,8 +156,20 @@ function processModels(rawData: ModelData[], ratio: number, openOnly: boolean): 
     });
 }
 
-function processUnranked(rawData: ModelData[], ratio: number): ProcessedModel[] {
+function processUnranked(
+  rawData: ModelData[],
+  ratio: number,
+  targetDate: string
+): ProcessedModel[] {
   return rawData
+    .map((d) => {
+      const createdDate = d.createdAt ? d.createdAt.slice(0, 10) : "";
+      if (createdDate && createdDate > targetDate) {
+        return null;
+      }
+      return d;
+    })
+    .filter((d): d is ModelData => d !== null)
     .filter(
       (d) =>
         d.ratingSource === "unranked" &&
@@ -188,23 +261,51 @@ interface ParetoChartProps {
 }
 
 export default function ParetoChart({ rawData, eloMeta }: ParetoChartProps) {
+  const timelineDates = useMemo(() => {
+    const dates = new Set<string>();
+    for (const d of rawData) {
+      if (d.createdAt) {
+        dates.add(d.createdAt.slice(0, 10));
+      }
+      if (d.history) {
+        for (const h of d.history) {
+          dates.add(h.date);
+        }
+      }
+    }
+    const sorted = Array.from(dates).sort();
+    if (sorted.length === 0) {
+      // Fallback
+      sorted.push(new Date().toISOString().slice(0, 10));
+    }
+    return sorted;
+  }, [rawData]);
+
   const [inputRatio, setInputRatio] = useState(75);
   const [openOnly, setOpenOnly] = useState(false);
   const [showLabels, setShowLabels] = useState(false);
   const [useLogos, setUseLogos] = useState(true);
   const [groupBy, setGroupBy] = useState<GroupingKey>("author");
   const [showUnranked, setShowUnranked] = useState(false);
+  const [selectedDateIndex, setSelectedDateIndex] = useState(timelineDates.length - 1);
   const chartRef = useRef<ChartJS<"scatter", ChartPoint[]> | null>(null);
   const unrankedSepYRef = useRef(0);
 
+  // Sync to latest date if new data loads
+  useEffect(() => {
+    setSelectedDateIndex(timelineDates.length - 1);
+  }, [timelineDates]);
+
+  const targetDate = timelineDates[selectedDateIndex];
+
   const models = useMemo(
-    () => processModels(rawData, inputRatio / 100, openOnly),
-    [rawData, inputRatio, openOnly]
+    () => processModels(rawData, inputRatio / 100, openOnly, targetDate),
+    [rawData, inputRatio, openOnly, targetDate]
   );
 
   const unrankedModels = useMemo(
-    () => processUnranked(rawData, inputRatio / 100),
-    [rawData, inputRatio]
+    () => processUnranked(rawData, inputRatio / 100, targetDate),
+    [rawData, inputRatio, targetDate]
   );
 
   const minRankedElo = useMemo(
@@ -329,7 +430,7 @@ export default function ParetoChart({ rawData, eloMeta }: ParetoChartProps) {
       <h1 className="text-center text-2xl sm:text-3xl font-semibold tracking-tight text-[#f5f5f7] mb-3">
         LLM Pareto Efficiency (Price vs Performance)
       </h1>
-      <p className="text-center text-sm text-[#a1a1a6] mb-8">
+      <p className="text-center text-sm text-[#a1a1a6] mb-6">
         Visualizing the balance between performance and cost for{" "}
         <span className="text-[#f5f5f7] font-medium">{models.length}</span> ranked LLM models
         {showUnranked && unrankedModels.length > 0 && (
@@ -340,6 +441,28 @@ export default function ParetoChart({ rawData, eloMeta }: ParetoChartProps) {
         )}
         . <span className="italic">Pricing via OpenRouter · ELO via arena.ai.</span>
       </p>
+
+      {/* Timeline Control */}
+      {timelineDates.length > 1 && (
+        <div className="flex flex-col items-center mb-8 px-4 w-full">
+          <div className="flex justify-between w-full max-w-2xl text-xs text-[#a1a1a6] mb-2 font-mono">
+            <span>{formatDate(timelineDates[0], "short")}</span>
+            <span className="text-sm text-[#f5f5f7] font-medium px-4 py-1 bg-[#2c2c2e] rounded-full">
+              {formatDate(targetDate, "long")}
+            </span>
+            <span>{formatDate(timelineDates[timelineDates.length - 1], "short")}</span>
+          </div>
+          <input
+            type="range"
+            min={0}
+            max={timelineDates.length - 1}
+            value={selectedDateIndex}
+            onChange={(e) => setSelectedDateIndex(Number(e.target.value))}
+            className="w-full max-w-2xl accent-[#007aff] h-2 bg-[#2c2c2e] rounded-lg appearance-none cursor-pointer"
+            style={{ WebkitAppearance: "none" }}
+          />
+        </div>
+      )}
 
       {/* Controls row 1 */}
       <div className="flex flex-wrap items-center gap-4 mb-5 pb-5 border-b border-[#2c2c2e]">

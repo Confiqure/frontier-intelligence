@@ -62,11 +62,19 @@ const orRes = await fetch("https://openrouter.ai/api/v1/models");
 if (!orRes.ok) throw new Error(`OpenRouter HTTP error: ${orRes.status}`);
 const { data: orModels } = await orRes.json();
 
-const orPaid = new Set(
-  orModels
-    .filter((m) => parseFloat(m.pricing?.prompt) > 0 && parseFloat(m.pricing?.completion) > 0)
-    .map((m) => m.id)
-);
+const orPaid = new Set();
+const orPrices = new Map();
+
+for (const m of orModels) {
+  if (parseFloat(m.pricing?.prompt) > 0 && parseFloat(m.pricing?.completion) > 0) {
+    orPaid.add(m.id);
+    orPrices.set(m.id, {
+      prompt: m.pricing.prompt,
+      completion: m.pricing.completion,
+      contextLength: m.context_length,
+    });
+  }
+}
 console.log(`  Found ${orPaid.size} paid models on OpenRouter\n`);
 
 // ── 2. Validate slugs ────────────────────────────────────────────────────────
@@ -203,13 +211,15 @@ const todayStr = new Date().toISOString().slice(0, 10);
 
 for (const [slug, entry] of Object.entries(eloScores)) {
   if (slug === "_meta") continue;
-  const arenaSlug = entry.arenaSlug;
-  if (!arenaSlug) {
-    unchanged++;
-    continue;
-  }
 
-  const live = arenaMap.get(arenaSlug);
+  // Track OpenRouter prices even if arena slug isn't matched
+  const currentPrices = orPrices.get(slug);
+  let live = null;
+
+  const arenaSlug = entry.arenaSlug;
+  if (arenaSlug) {
+    live = arenaMap.get(arenaSlug);
+  }
 
   // Backwards compatibility: ensure we have a history array
   if (!entry.history) {
@@ -223,30 +233,59 @@ for (const [slug, entry] of Object.entries(eloScores)) {
   }
 
   const latestEntry = entry.history[entry.history.length - 1];
-
-  if (!live) {
-    notFound.push({ slug, arenaSlug, oldRating: latestEntry.rating });
-    unchanged++;
-    continue;
-  }
-
   let modified = false;
 
-  if (live.rating !== latestEntry.rating || live.rank !== latestEntry.rank) {
+  // Check if pricing has changed from latest history entry
+  let pricingChanged = false;
+  if (currentPrices) {
+    if (
+      latestEntry.pricingPrompt !== currentPrices.prompt ||
+      latestEntry.pricingCompletion !== currentPrices.completion
+    ) {
+      pricingChanged = true;
+    }
+  }
+
+  if (arenaSlug && !live) {
+    notFound.push({ slug, arenaSlug, oldRating: latestEntry.rating });
+    if (!pricingChanged) unchanged++;
+  }
+
+  let ratingChanged = false;
+  if (live && (live.rating !== latestEntry.rating || live.rank !== latestEntry.rank)) {
     console.log(
       `  ✦ ${slug.padEnd(50)} ELO ${latestEntry.rating} → ${live.rating}  rank ${latestEntry.rank} → ${live.rank}`
     );
+    ratingChanged = true;
+  }
+
+  if (ratingChanged || pricingChanged) {
+    const newRating = live?.rating ?? latestEntry.rating;
+    const newRank = live?.rank ?? latestEntry.rank;
+    const newPrompt = currentPrices?.prompt ?? latestEntry.pricingPrompt;
+    const newCompletion = currentPrices?.completion ?? latestEntry.pricingCompletion;
+    const newContext = currentPrices?.contextLength ?? latestEntry.contextLength;
 
     if (latestEntry.date === todayStr) {
-      latestEntry.rating = live.rating;
-      latestEntry.rank = live.rank;
+      latestEntry.rating = newRating;
+      latestEntry.rank = newRank;
+      if (newPrompt) latestEntry.pricingPrompt = newPrompt;
+      if (newCompletion) latestEntry.pricingCompletion = newCompletion;
+      if (newContext) latestEntry.contextLength = newContext;
     } else {
-      entry.history.push({ date: todayStr, rating: live.rating, rank: live.rank });
+      entry.history.push({
+        date: todayStr,
+        rating: newRating,
+        rank: newRank,
+        pricingPrompt: newPrompt,
+        pricingCompletion: newCompletion,
+        contextLength: newContext,
+      });
     }
 
     // Maintain flat fields for backwards compatibility during transition
-    entry.rating = live.rating;
-    entry.rank = live.rank;
+    entry.rating = newRating;
+    entry.rank = newRank;
     modified = true;
   }
 
@@ -257,7 +296,7 @@ for (const [slug, entry] of Object.entries(eloScores)) {
 
   if (modified) {
     updated++;
-  } else {
+  } else if (!arenaSlug || live) {
     unchanged++;
   }
 }

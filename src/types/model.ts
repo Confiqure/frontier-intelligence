@@ -17,6 +17,15 @@ export interface ModelData {
   license: string; // "unknown" for unranked
   rank: number; // 0 for unranked
   ratingSource?: RatingSource; // undefined treated as "arena" for backwards-compat
+  isDeprecated?: boolean; // True if no longer available on OpenRouter
+  history?: Array<{
+    date: string;
+    rating: number;
+    rank: number;
+    pricingPrompt?: string;
+    pricingCompletion?: string;
+    contextLength?: number;
+  }>;
 }
 
 export interface ProcessedModel extends ModelData {

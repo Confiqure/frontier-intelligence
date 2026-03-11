@@ -28,6 +28,9 @@ type EloEntry = {
     date: string;
     rating: number;
     rank: number;
+    pricingPrompt?: string;
+    pricingCompletion?: string;
+    contextLength?: number;
   }>;
   // Legacy fields for transition
   rating?: number;
@@ -70,6 +73,7 @@ export async function getLiveModels(): Promise<{
 
   // Join: iterate OR paid models, annotate with ELO data where available
   const results: ModelData[] = [];
+  const processedSlugs = new Set<string>();
 
   for (const or of orModels) {
     const promptPrice = parseFloat(or.pricing.prompt);
@@ -82,6 +86,7 @@ export async function getLiveModels(): Promise<{
     const slug = or.id;
     const elo = ELO_MAP[slug];
     const author = slug.split("/")[0];
+    processedSlugs.add(slug);
 
     if (elo && (elo.rating || elo.history?.length)) {
       // Ranked model — full arena ELO data available
@@ -97,11 +102,15 @@ export async function getLiveModels(): Promise<{
         pricingPrompt: or.pricing.prompt,
         pricingCompletion: or.pricing.completion,
         rating,
-        createdAt: new Date(or.created * 1000).toISOString(),
+        createdAt: elo.discoveryDate 
+          ? new Date(elo.discoveryDate).toISOString() 
+          : new Date(or.created * 1000).toISOString(),
         contextLength: or.context_length,
         license: elo.license,
         rank,
         ratingSource: "arena",
+        history: elo.history,
+        isDeprecated: false,
       });
     } else if (TRACKED_SLUG_PREFIXES.some((p) => slug.startsWith(p)) && !EXCLUDED_SLUGS.has(slug)) {
       // Price data only — not yet on Arena leaderboard
@@ -121,5 +130,34 @@ export async function getLiveModels(): Promise<{
     }
   }
 
+  // Backfill deprecated or untracked models that still exist in our elo data
+  for (const [slug, elo] of Object.entries(ELO_MAP)) {
+    if (processedSlugs.has(slug)) continue;
+    
+    const latestHistory = elo.history?.[elo.history.length - 1];
+    if (!latestHistory?.pricingPrompt || !latestHistory?.pricingCompletion) continue; // No historical pricing
+    if (!elo.rating && !elo.history?.length) continue;
+
+    const author = slug.split("/")[0];
+    const authorDisplay = AUTHOR_DISPLAY_NAMES[author] ?? author;
+
+    results.push({
+      openRouterSlug: slug,
+      lmArenaDisplayName: elo.lmArenaDisplayName,
+      author: authorDisplay,
+      pricingPrompt: latestHistory.pricingPrompt,
+      pricingCompletion: latestHistory.pricingCompletion,
+      rating: latestHistory.rating ?? elo.rating ?? 0,
+      createdAt: elo.discoveryDate ? new Date(elo.discoveryDate).toISOString() : new Date().toISOString(),
+      contextLength: latestHistory.contextLength ?? 0,
+      license: elo.license,
+      rank: latestHistory.rank ?? elo.rank ?? 0,
+      ratingSource: "arena",
+      history: elo.history,
+      isDeprecated: true,
+    });
+  }
+
   return { models: results, eloMeta: ELO_META };
 }
+
