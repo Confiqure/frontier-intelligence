@@ -72,10 +72,15 @@ export const DATA = {
   "openai/gpt-5-mini":        { lmArenaDisplayName: "GPT-5 mini",             arenaSlug: "gpt-5-mini-high",                      rating: 1390, rank:  80, license: "proprietary" },
   "openai/gpt-5-nano":        { lmArenaDisplayName: "GPT-5 nano",             arenaSlug: "gpt-5-nano-high",                      rating: 1338, rank: 135, license: "proprietary" },  "openai/gpt-5-pro":         { lmArenaDisplayName: "GPT-5 Pro",            arenaSlug: "gpt-5-high",                           rating: 1434, rank:  31, license: "proprietary" },
   "openai/gpt-5.2-pro":       { lmArenaDisplayName: "GPT-5.2 Pro",          arenaSlug: "gpt-5.2-high",                         rating: 1441, rank:  27, license: "proprietary" },
+  "openai/gpt-5.4-mini":     { lmArenaDisplayName: "GPT-5.4 mini",            arenaSlug: "gpt-5.4-mini-high", rating: 1430, rank:  90, license: "proprietary" },
+  "openai/gpt-5.4-nano":     { lmArenaDisplayName: "GPT-5.4 nano",            arenaSlug: "gpt-5.4-nano-high", rating: 1380, rank: 115, license: "proprietary" },
+  "openai/gpt-5.4-image-2":  { lmArenaDisplayName: "GPT-5.4 Image 2",         arenaSlug: "gpt-5.4-image-2",     rating: 1450, rank:  30, license: "proprietary" },
+  "openai/gpt-5.5":          { lmArenaDisplayName: "GPT-5.5",                 arenaSlug: "gpt-5.5",             rating: 1490, rank:  10, license: "proprietary" },
+  "openai/gpt-5.5-pro":      { lmArenaDisplayName: "GPT-5.5 Pro",             arenaSlug: "gpt-5.5-pro",         rating: 1500, rank:   5, license: "proprietary" },
   "openai/gpt-oss-120b":      { lmArenaDisplayName: "GPT-OSS 120B",         arenaSlug: "gpt-oss-120b",                         rating: 1354, rank: 114, license: "open"        },  "openai/gpt-4-turbo":       { lmArenaDisplayName: "GPT-4 Turbo (Apr 2024)", arenaSlug: "gpt-4-turbo-2024-04-09",               rating: 1324, rank: 152, license: "proprietary" },
 
   // ── Anthropic ─────────────────────────────────────────────────────────────
-  "anthropic/claude-3.5-sonnet":          { lmArenaDisplayName: "Claude 3.5 Sonnet (Oct 2024)",  arenaSlug: "claude-3-5-sonnet-20241022",              rating: 1373, rank:  99, license: "proprietary" },
+  // "anthropic/claude-3.5-sonnet":          { lmArenaDisplayName: "Claude 3.5 Sonnet (Oct 2024)",  arenaSlug: "claude-3-5-sonnet-20241022",              rating: 1373, rank:  99, license: "proprietary" },
   "anthropic/claude-3.5-haiku":           { lmArenaDisplayName: "Claude 3.5 Haiku",              arenaSlug: "claude-3-5-haiku-20241022",               rating: 1324, rank: 153, license: "proprietary" },
   "anthropic/claude-3-haiku":             { lmArenaDisplayName: "Claude 3 Haiku",                arenaSlug: "claude-3-haiku-20240307",                 rating: 1261, rank: 213, license: "proprietary" },
   "anthropic/claude-3.7-sonnet":          { lmArenaDisplayName: "Claude 3.7 Sonnet",             arenaSlug: "claude-3-7-sonnet-20250219",              rating: 1372, rank: 100, license: "proprietary" },
@@ -84,6 +89,8 @@ export const DATA = {
   "anthropic/claude-opus-4.1":            { lmArenaDisplayName: "Claude Opus 4.1 (Aug 2025)",    arenaSlug: "claude-opus-4-1-20250805",                rating: 1446, rank:  23, license: "proprietary" },
   "anthropic/claude-opus-4.5":            { lmArenaDisplayName: "Claude Opus 4.5 (Nov 2025)",    arenaSlug: "claude-opus-4-5-20251101",                rating: 1467, rank:   9, license: "proprietary" },
   "anthropic/claude-opus-4.6":            { lmArenaDisplayName: "Claude Opus 4.6",               arenaSlug: "claude-opus-4-6",                         rating: 1505, rank:   1, license: "proprietary" },
+  "anthropic/claude-opus-4.7":            { lmArenaDisplayName: "Claude Opus 4.7",               arenaSlug: "claude-opus-4-7",       rating: 1494, rank:   4, license: "proprietary" },
+  "anthropic/claude-opus-4.6-fast":       { lmArenaDisplayName: "Claude Opus 4.6 (fast)",         arenaSlug: "claude-opus-4-6-fast",  rating: 1490, rank:   6, license: "proprietary" },
   "anthropic/claude-sonnet-4":            { lmArenaDisplayName: "Claude Sonnet 4 (May 2025)",    arenaSlug: "claude-sonnet-4-20250514",                rating: 1390, rank:  82, license: "proprietary" },
   "anthropic/claude-sonnet-4.5":          { lmArenaDisplayName: "Claude Sonnet 4.5 (Sep 2025)",  arenaSlug: "claude-sonnet-4-5-20250929",              rating: 1450, rank:  16, license: "proprietary" },
   "anthropic/claude-sonnet-4.6":          { lmArenaDisplayName: "Claude Sonnet 4.6",             arenaSlug: "claude-sonnet-4-6",                       rating: 1457, rank:  13, license: "proprietary" },
@@ -94,7 +101,7 @@ export const DATA = {
   // "google/gemini-3.1-pro-preview-customtools": { lmArenaDisplayName: "Gemini 3.1 Pro CustomTools", arenaSlug: "gemini-3.1-pro-preview-customtools", rating: 1500, rank: 3, license: "proprietary" },
   // "google/gemini-3.1-flash-image-preview": { lmArenaDisplayName: "Gemini 3.1 Flash Image", arenaSlug: "gemini-3.1-flash-image-preview", rating: 1475, rank: 5, license: "proprietary" },
   "google/gemini-3.1-flash-lite-preview": { lmArenaDisplayName: "Gemini 3.1 Flash Lite", arenaSlug: "gemini-3.1-flash-lite-preview", rating: 1380, rank: 90, license: "proprietary" },
-  "google/gemini-3-pro-preview":   { lmArenaDisplayName: "Gemini 3 Pro Preview",   arenaSlug: "gemini-3-pro",           rating: 1486, rank:   4, license: "proprietary" },
+  // "google/gemini-3-pro-preview":   { lmArenaDisplayName: "Gemini 3 Pro Preview",   arenaSlug: "gemini-3-pro",           rating: 1486, rank:   4, license: "proprietary" },
   "google/gemini-3-flash-preview": { lmArenaDisplayName: "Gemini 3 Flash Preview", arenaSlug: "gemini-3-flash",         rating: 1474, rank:   6, license: "proprietary" },
   "google/gemini-2.5-pro":         { lmArenaDisplayName: "Gemini 2.5 Pro",         arenaSlug: "gemini-2.5-pro",         rating: 1449, rank:  19, license: "proprietary" },
   "google/gemini-2.5-pro-preview": { lmArenaDisplayName: "Gemini 2.5 Pro Preview", arenaSlug: "gemini-2.5-pro",         rating: 1449, rank:  19, license: "proprietary" },
@@ -104,14 +111,16 @@ export const DATA = {
   "google/gemini-2.5-flash-lite":     { lmArenaDisplayName: "Gemini 2.5 Flash Lite",    arenaSlug: "gemini-2.5-flash-lite-preview-09-2025-no-thinking", rating: 1379, rank:  94, license: "proprietary" },
   "google/gemma-3-27b-it":            { lmArenaDisplayName: "Gemma 3 27B",            arenaSlug: "gemma-3-27b-it",         rating: 1365, rank: 105, license: "open" },
   "google/gemma-3-12b-it":         { lmArenaDisplayName: "Gemma 3 12B",            arenaSlug: "gemma-3-12b-it",         rating: 1342, rank: 132, license: "open" },
+  "google/gemma-4-31b-it":          { lmArenaDisplayName: "Gemma 4 31B",            arenaSlug: "gemma-4-31b",            rating: 1451, rank:  32, license: "open" },
+  "google/gemma-4-26b-a4b-it":      { lmArenaDisplayName: "Gemma 4 26B A4B",        arenaSlug: "gemma-4-26b-a4b",        rating: 1439, rank:  49, license: "open" },
   "google/gemma-2-27b-it":         { lmArenaDisplayName: "Gemma 2 27B",            arenaSlug: "gemma-2-27b-it",         rating: 1288, rank: 191, license: "open" },
-  "google/gemma-2-9b-it":          { lmArenaDisplayName: "Gemma 2 9B",             arenaSlug: "gemma-2-9b-it",          rating: 1266, rank: 209, license: "open" },
+  // "google/gemma-2-9b-it":          { lmArenaDisplayName: "Gemma 2 9B",             arenaSlug: "gemma-2-9b-it",          rating: 1266, rank: 209, license: "open" },
 
   // ── Meta ──────────────────────────────────────────────────────────────────
   "meta-llama/llama-4-maverick":        { lmArenaDisplayName: "Llama 4 Maverick 17B",   arenaSlug: "llama-4-maverick-17b-128e-instruct", rating: 1328, rank: 149, license: "open" },
   "meta-llama/llama-4-scout":           { lmArenaDisplayName: "Llama 4 Scout 17B",      arenaSlug: "llama-4-scout-17b-16e-instruct",     rating: 1323, rank: 156, license: "open" },
   "meta-llama/llama-3.3-70b-instruct":  { lmArenaDisplayName: "Llama 3.3 70B Instruct", arenaSlug: "llama-3.3-70b-instruct",             rating: 1320, rank: 161, license: "open" },
-  "meta-llama/llama-3.1-405b-instruct": { lmArenaDisplayName: "Llama 3.1 405B Instruct",arenaSlug: "llama-3.1-405b-instruct-bf16",       rating: 1335, rank: 139, license: "open" },
+  // "meta-llama/llama-3.1-405b-instruct": { lmArenaDisplayName: "Llama 3.1 405B Instruct",arenaSlug: "llama-3.1-405b-instruct-bf16",       rating: 1335, rank: 139, license: "open" },
   "meta-llama/llama-3.1-70b-instruct":  { lmArenaDisplayName: "Llama 3.1 70B Instruct", arenaSlug: "llama-3.1-70b-instruct",             rating: 1294, rank: 187, license: "open" },
   "meta-llama/llama-3.1-8b-instruct":   { lmArenaDisplayName: "Llama 3.1 8B Instruct",  arenaSlug: "llama-3.1-8b-instruct",              rating: 1212, rank: 239, license: "open" },
 
@@ -124,6 +133,8 @@ export const DATA = {
   "deepseek/deepseek-r1":           { lmArenaDisplayName: "DeepSeek R1",        arenaSlug: "deepseek-r1",        rating: 1398, rank:  73, license: "open" },
   "deepseek/deepseek-chat-v3-0324": { lmArenaDisplayName: "DeepSeek V3 (0324)", arenaSlug: "deepseek-v3-0324",   rating: 1394, rank:  76, license: "open" },
   "deepseek/deepseek-chat":         { lmArenaDisplayName: "DeepSeek V3",        arenaSlug: "deepseek-v3",        rating: 1358, rank: 110, license: "open" },
+  "deepseek/deepseek-v4-pro":        { lmArenaDisplayName: "DeepSeek V4 Pro",     arenaSlug: "deepseek-v4-pro",    rating: 1463, rank:  20, license: "open" },
+  "deepseek/deepseek-v4-flash":      { lmArenaDisplayName: "DeepSeek V4 Flash",   arenaSlug: "deepseek-v4-flash",  rating: 1433, rank:  55, license: "open" },
 
   // ── Mistral ───────────────────────────────────────────────────────────────
   "mistralai/mistral-large-2512":              { lmArenaDisplayName: "Mistral Large 3",           arenaSlug: "mistral-large-3",                     rating: 1414, rank:  55, license: "open" },
@@ -133,12 +144,14 @@ export const DATA = {
   "mistralai/mistral-large-2407":              { lmArenaDisplayName: "Mistral Large (2407)",       arenaSlug: "mistral-large-2407",                  rating: 1314, rank: 170, license: "open" },
   "mistralai/mistral-large":                   { lmArenaDisplayName: "Mistral Large (2402)",       arenaSlug: "mistral-large-2402",                  rating: 1243, rank: 219, license: "open" },
   "mistralai/mistral-small-3.2-24b-instruct":  { lmArenaDisplayName: "Mistral Small 3.2",          arenaSlug: "mistral-small-2506",                  rating: 1356, rank: 113, license: "open" },
+  "mistralai/mistral-small-2603":               { lmArenaDisplayName: "Mistral Small 2603",         arenaSlug: "mistral-small-2603",                  rating: 1360, rank: 130, license: "open" },
   "mistralai/mistral-small-3.1-24b-instruct":  { lmArenaDisplayName: "Mistral Small 3.1",          arenaSlug: "mistral-small-3.1-24b-instruct-2503", rating: 1305, rank: 182, license: "open" },
   "mistralai/mistral-small-24b-instruct-2501": { lmArenaDisplayName: "Mistral Small 3 (2501)",     arenaSlug: "mistral-small-24b-instruct-2501",     rating: 1274, rank: 204, license: "open" },
   "mistralai/mixtral-8x22b-instruct":          { lmArenaDisplayName: "Mixtral 8x22B Instruct",     arenaSlug: "mixtral-8x22b-instruct-v0.1",         rating: 1230, rank: 228, license: "open" },
 
   // ── Qwen ──────────────────────────────────────────────────────────────────
   "qwen/qwen3.5-122b-a10b":    { lmArenaDisplayName: "Qwen3.5 122B A10B",    arenaSlug: "qwen3.5-122b-a10b",    rating: 1420, rank:  40, license: "open" },
+  "qwen/qwen3.6-plus":          { lmArenaDisplayName: "Qwen3.6 Plus",          arenaSlug: "qwen3.6-plus",         rating: 1447, rank:  41, license: "proprietary" },
   "qwen/qwen3.5-27b":          { lmArenaDisplayName: "Qwen3.5 27B",          arenaSlug: "qwen3.5-27b",          rating: 1350, rank: 120, license: "open" },
   "qwen/qwen3.5-35b-a3b":      { lmArenaDisplayName: "Qwen3.5 35B A3B",      arenaSlug: "qwen3.5-35b-a3b",      rating: 1360, rank: 110, license: "open" },
   // "qwen/qwen3.5-9b":           { lmArenaDisplayName: "Qwen3.5 9B",           arenaSlug: "qwen3.5-9b",           rating: 1250, rank: 220, license: "open" },
@@ -156,6 +169,8 @@ export const DATA = {
 
   // ── xAI ───────────────────────────────────────────────────────────────────
   "x-ai/grok-4.1-fast": { lmArenaDisplayName: "Grok-4.1",      arenaSlug: "grok-4.1",           rating: 1463, rank:  11, license: "proprietary" },
+  "x-ai/grok-4.20":                { lmArenaDisplayName: "Grok-4.20",             arenaSlug: "grok-4.20-beta1",                   rating: 1482, rank:   8, license: "proprietary" },
+  "x-ai/grok-4.20-multi-agent":    { lmArenaDisplayName: "Grok-4.20 Multi-Agent", arenaSlug: "grok-4.20-multi-agent-beta-0309",   rating: 1476, rank:  12, license: "proprietary" },
   "x-ai/grok-4-fast":   { lmArenaDisplayName: "Grok-4 Fast",  arenaSlug: "grok-4-fast-chat",   rating: 1422, rank:  44, license: "proprietary" },
   "x-ai/grok-4":        { lmArenaDisplayName: "Grok-4",       arenaSlug: "grok-4-0709",         rating: 1409, rank:  64, license: "proprietary" },
   "x-ai/grok-3":        { lmArenaDisplayName: "Grok-3",      arenaSlug: "grok-3-preview-02-24", rating: 1411, rank:  60, license: "proprietary" },
