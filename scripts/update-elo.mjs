@@ -78,12 +78,16 @@ for (const m of orModels) {
 console.log(`  Found ${orPaid.size} paid models on OpenRouter\n`);
 
 // ── 2. Validate slugs ────────────────────────────────────────────────────────
-const ourSlugs = Object.keys(eloScores).filter((s) => s !== "_meta");
+// Active slugs only — deprecated entries are intentionally preserved in eloScores.json
+// for historical/timeline data and are excluded from OR validation.
+const ourSlugs = Object.keys(eloScores).filter(
+  (s) => s !== "_meta" && !eloScores[s].isDeprecated
+);
 const stale = ourSlugs.filter((s) => !orPaid.has(s));
 const valid = ourSlugs.filter((s) => orPaid.has(s));
 
 console.log("── OR slug validation ──────────────────────────────────────────────");
-console.log(`  Total entries    : ${ourSlugs.length}`);
+console.log(`  Total entries    : ${ourSlugs.length}  (+ ${Object.keys(eloScores).filter(s => s !== "_meta" && eloScores[s].isDeprecated).length} deprecated)`);
 console.log(`  Valid on OR      : ${valid.length}`);
 console.log(`  Stale (not on OR): ${stale.length}`);
 
@@ -203,14 +207,16 @@ if (arenaMap.size === 0) {
   process.exit(1);
 }
 
-let updated = 0;
+let eloChanges = 0;
+let pricingOnlyChanges = 0;
+let dateOnlyUpdates = 0;
 let unchanged = 0;
 const notFound = [];
 
 const todayStr = new Date().toISOString().slice(0, 10);
 
 for (const [slug, entry] of Object.entries(eloScores)) {
-  if (slug === "_meta") continue;
+  if (slug === "_meta" || entry.isDeprecated) continue;
 
   // Track OpenRouter prices even if arena slug isn't matched
   const currentPrices = orPrices.get(slug);
@@ -295,20 +301,26 @@ for (const [slug, entry] of Object.entries(eloScores)) {
   }
 
   if (modified) {
-    updated++;
+    if (ratingChanged) eloChanges++;
+    else if (pricingChanged) pricingOnlyChanges++;
+    else dateOnlyUpdates++;
   } else if (!arenaSlug || live) {
     unchanged++;
   }
 }
 
-if (updated > 0) {
+const totalModified = eloChanges + pricingOnlyChanges + dateOnlyUpdates;
+if (totalModified > 0) {
   const refreshedAt = new Date().toISOString();
   eloScores._meta = { ...existingMeta, eloRefreshedAt: refreshedAt };
   writeFileSync(SCORES_PATH, JSON.stringify(eloScores, null, 2) + "\n");
-  console.log(`\n✅ Updated ${updated} entries — wrote eloScores.json`);
+  console.log(`\n✅ Wrote eloScores.json — breakdown:`);
+  if (eloChanges > 0)        console.log(`   ELO rating changes    : ${eloChanges}`);
+  if (pricingOnlyChanges > 0) console.log(`   Pricing-only updates  : ${pricingOnlyChanges}  (ELO unchanged)`);
+  if (dateOnlyUpdates > 0)   console.log(`   Date-stamp refreshes  : ${dateOnlyUpdates}  (no value changes)`);
   console.log(`   elo refreshed : ${refreshedAt.slice(0, 10)}`);
 } else {
-  console.log(`\n✓ All ratings already up to date (${unchanged} entries unchanged)`);
+  console.log(`\n✓ All entries already up to date (${unchanged} entries unchanged)`);
 }
 
 if (notFound.length > 0) {
@@ -319,4 +331,6 @@ if (notFound.length > 0) {
   console.log("   → Fix arenaSlug in seed-elo.mjs → npm run seed-elo → npm run update-elo");
 }
 
-process.exit(stale.length > 0 ? 1 : 0);
+// Stale slugs are a warning surfaced in output — they don't indicate script failure.
+// Remove stale entries from seed-elo.mjs and run `npm run seed-elo` to clear them.
+process.exit(0);

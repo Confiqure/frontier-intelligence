@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "seedWrittenAt": "2026-04-25T03:20:36.675Z",
+    "seedWrittenAt": "2026-04-27T01:29:36.302Z",
     "eloRefreshedAt": "2026-04-26T14:02:35.857Z"
   },
   "openai/gpt-4o": {
@@ -652,9 +652,7 @@
         "pricingCompletion": "0.0000045",
         "contextLength": 400000
       }
-    ],
-    "rating": 1457,
-    "rank": 27
+    ]
   },
   "openai/gpt-5.4-nano": {
     "lmArenaDisplayName": "GPT-5.4 nano",
@@ -672,9 +670,7 @@
         "pricingCompletion": "0.00000125",
         "contextLength": 400000
       }
-    ],
-    "rating": 1405,
-    "rank": 93
+    ]
   },
   "openai/gpt-5.4-image-2": {
     "lmArenaDisplayName": "GPT-5.4 Image 2",
@@ -2030,9 +2026,7 @@
         "pricingCompletion": "0.00000087",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1463,
-    "rank": 20
+    ]
   },
   "deepseek/deepseek-v4-flash": {
     "lmArenaDisplayName": "DeepSeek V4 Flash",
@@ -2818,9 +2812,7 @@
         "pricingCompletion": "0.0000004",
         "contextLength": 32768
       }
-    ],
-    "rating": 1303,
-    "rank": 128
+    ]
   },
   "x-ai/grok-4.1-fast": {
     "lmArenaDisplayName": "Grok-4.1",
