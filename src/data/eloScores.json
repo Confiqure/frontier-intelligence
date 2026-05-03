@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "seedWrittenAt": "2026-04-27T01:29:36.302Z",
+    "seedWrittenAt": "2026-05-03T21:32:28.188Z",
     "eloRefreshedAt": "2026-05-03T15:14:40.951Z"
   },
   "openai/gpt-4o": {
@@ -71,9 +71,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1335,
-    "rank": 59
+    ]
   },
   "openai/gpt-4o-2024-11-20": {
     "lmArenaDisplayName": "GPT-4o (Nov 2024)",
@@ -112,9 +110,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1335,
-    "rank": 59
+    ]
   },
   "openai/gpt-4o-mini": {
     "lmArenaDisplayName": "GPT-4o mini",
@@ -179,9 +175,7 @@
         "pricingCompletion": "0.000015",
         "contextLength": 1050000
       }
-    ],
-    "rating": 1467,
-    "rank": 12
+    ]
   },
   "openai/gpt-5.4-pro": {
     "lmArenaDisplayName": "GPT-5.4 Pro",
@@ -370,9 +364,7 @@
         "pricingCompletion": "0.0000044",
         "contextLength": 200000
       }
-    ],
-    "rating": 1348,
-    "rank": 56
+    ]
   },
   "openai/o3-mini-high": {
     "lmArenaDisplayName": "o3-mini (high)",
@@ -411,9 +403,7 @@
         "pricingCompletion": "0.0000044",
         "contextLength": 200000
       }
-    ],
-    "rating": 1364,
-    "rank": 55
+    ]
   },
   "openai/o3": {
     "lmArenaDisplayName": "o3",
@@ -545,9 +535,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 400000
       }
-    ],
-    "rating": 1439,
-    "rank": 34
+    ]
   },
   "openai/gpt-5.2": {
     "lmArenaDisplayName": "GPT-5.2",
@@ -586,9 +574,7 @@
         "pricingCompletion": "0.000014",
         "contextLength": 400000
       }
-    ],
-    "rating": 1439,
-    "rank": 33
+    ]
   },
   "openai/gpt-5-mini": {
     "lmArenaDisplayName": "GPT-5 mini",
@@ -766,9 +752,7 @@
         "pricingCompletion": "0.000015",
         "contextLength": 272000
       }
-    ],
-    "rating": 1450,
-    "rank": 19
+    ]
   },
   "openai/gpt-5.5": {
     "lmArenaDisplayName": "GPT-5.5",
@@ -794,9 +778,7 @@
         "pricingCompletion": "0.00003",
         "contextLength": 1050000
       }
-    ],
-    "rating": 1490,
-    "rank": 4
+    ]
   },
   "openai/gpt-5.5-pro": {
     "lmArenaDisplayName": "GPT-5.5 Pro",
@@ -822,9 +804,7 @@
         "pricingCompletion": "0.00018",
         "contextLength": 1050000
       }
-    ],
-    "rating": 1500,
-    "rank": 3
+    ]
   },
   "openai/gpt-oss-120b": {
     "lmArenaDisplayName": "GPT-OSS 120B",
@@ -863,9 +843,7 @@
         "pricingCompletion": "0.00000018",
         "contextLength": 131072
       }
-    ],
-    "rating": 1354,
-    "rank": 164
+    ]
   },
   "openai/gpt-4-turbo": {
     "lmArenaDisplayName": "GPT-4 Turbo (Apr 2024)",
@@ -1152,9 +1130,7 @@
         "pricingCompletion": "0.000025",
         "contextLength": 1000000
       }
-    ],
-    "rating": 1496,
-    "rank": 1
+    ]
   },
   "anthropic/claude-opus-4.7": {
     "lmArenaDisplayName": "Claude Opus 4.7",
@@ -1180,9 +1156,7 @@
         "pricingCompletion": "0.000025",
         "contextLength": 1000000
       }
-    ],
-    "rating": 1494,
-    "rank": 2
+    ]
   },
   "anthropic/claude-opus-4.6-fast": {
     "lmArenaDisplayName": "Claude Opus 4.6 (fast)",
@@ -1389,9 +1363,7 @@
         "pricingCompletion": "0.0000015",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1439,
-    "rank": 30
+    ]
   },
   "google/gemini-3-flash-preview": {
     "lmArenaDisplayName": "Gemini 3 Flash Preview",
@@ -1461,9 +1433,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1448,
-    "rank": 20
+    ]
   },
   "google/gemini-2.5-pro-preview": {
     "lmArenaDisplayName": "Gemini 2.5 Pro Preview",
@@ -1502,9 +1472,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1448,
-    "rank": 20
+    ]
   },
   "google/gemini-2.5-flash": {
     "lmArenaDisplayName": "Gemini 2.5 Flash",
@@ -1543,9 +1511,7 @@
         "pricingCompletion": "0.0000025",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1411,
-    "rank": 46
+    ]
   },
   "google/gemini-2.0-flash-001": {
     "lmArenaDisplayName": "Gemini 2.0 Flash",
@@ -1584,9 +1550,7 @@
         "pricingCompletion": "0.0000004",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1361,
-    "rank": 88
+    ]
   },
   "google/gemini-2.0-flash-lite-001": {
     "lmArenaDisplayName": "Gemini 2.0 Flash Lite",
@@ -1687,9 +1651,7 @@
         "pricingCompletion": "0.00000016",
         "contextLength": 131072
       }
-    ],
-    "rating": 1365,
-    "rank": 62
+    ]
   },
   "google/gemma-3-12b-it": {
     "lmArenaDisplayName": "Gemma 3 12B",
@@ -1728,9 +1690,7 @@
         "pricingCompletion": "0.00000013",
         "contextLength": 131072
       }
-    ],
-    "rating": 1342,
-    "rank": 63
+    ]
   },
   "google/gemma-4-31b-it": {
     "lmArenaDisplayName": "Gemma 4 31B",
@@ -1898,9 +1858,7 @@
         "pricingCompletion": "0.00000032",
         "contextLength": 131072
       }
-    ],
-    "rating": 1319,
-    "rank": 82
+    ]
   },
   "meta-llama/llama-3.1-70b-instruct": {
     "lmArenaDisplayName": "Llama 3.1 70B Instruct",
@@ -1939,9 +1897,7 @@
         "pricingCompletion": "0.0000004",
         "contextLength": 131072
       }
-    ],
-    "rating": 1293,
-    "rank": 83
+    ]
   },
   "meta-llama/llama-3.1-8b-instruct": {
     "lmArenaDisplayName": "Llama 3.1 8B Instruct",
@@ -1980,9 +1936,7 @@
         "pricingCompletion": "0.00000005",
         "contextLength": 16384
       }
-    ],
-    "rating": 1211,
-    "rank": 84
+    ]
   },
   "deepseek/deepseek-v3.2": {
     "lmArenaDisplayName": "DeepSeek V3.2",
@@ -2021,9 +1975,7 @@
         "pricingCompletion": "0.000000378",
         "contextLength": 131072
       }
-    ],
-    "rating": 1424,
-    "rank": 27
+    ]
   },
   "deepseek/deepseek-v3.2-exp": {
     "lmArenaDisplayName": "DeepSeek V3.2 Exp",
@@ -2062,9 +2014,7 @@
         "pricingCompletion": "0.00000041",
         "contextLength": 163840
       }
-    ],
-    "rating": 1423,
-    "rank": 28
+    ]
   },
   "deepseek/deepseek-r1-0528": {
     "lmArenaDisplayName": "DeepSeek R1 (0528)",
@@ -2103,9 +2053,7 @@
         "pricingCompletion": "0.00000215",
         "contextLength": 163840
       }
-    ],
-    "rating": 1422,
-    "rank": 29
+    ]
   },
   "deepseek/deepseek-v3.1-terminus": {
     "lmArenaDisplayName": "DeepSeek V3.1 Terminus",
@@ -2144,9 +2092,7 @@
         "pricingCompletion": "0.00000095",
         "contextLength": 163840
       }
-    ],
-    "rating": 1416,
-    "rank": 31
+    ]
   },
   "deepseek/deepseek-chat-v3.1": {
     "lmArenaDisplayName": "DeepSeek V3.1",
@@ -2216,9 +2162,7 @@
         "pricingCompletion": "0.0000025",
         "contextLength": 64000
       }
-    ],
-    "rating": 1398,
-    "rank": 50
+    ]
   },
   "deepseek/deepseek-chat-v3-0324": {
     "lmArenaDisplayName": "DeepSeek V3 (0324)",
@@ -2314,9 +2258,7 @@
         "pricingCompletion": "0.00000087",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1463,
-    "rank": 13
+    ]
   },
   "deepseek/deepseek-v4-flash": {
     "lmArenaDisplayName": "DeepSeek V4 Flash",
@@ -2342,9 +2284,7 @@
         "pricingCompletion": "0.00000028",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1433,
-    "rank": 38
+    ]
   },
   "mistralai/mistral-large-2512": {
     "lmArenaDisplayName": "Mistral Large 3",
@@ -2476,9 +2416,7 @@
         "pricingCompletion": "0.000006",
         "contextLength": 131072
       }
-    ],
-    "rating": 1305,
-    "rank": 76
+    ]
   },
   "mistralai/mistral-large-2407": {
     "lmArenaDisplayName": "Mistral Large (2407)",
@@ -2517,9 +2455,7 @@
         "pricingCompletion": "0.000006",
         "contextLength": 131072
       }
-    ],
-    "rating": 1314,
-    "rank": 77
+    ]
   },
   "mistralai/mistral-large": {
     "lmArenaDisplayName": "Mistral Large (2402)",
@@ -2607,9 +2543,7 @@
         "pricingCompletion": "0.0000006",
         "contextLength": 262144
       }
-    ],
-    "rating": 1360,
-    "rank": 74
+    ]
   },
   "mistralai/mistral-small-3.1-24b-instruct": {
     "lmArenaDisplayName": "Mistral Small 3.1",
@@ -2736,9 +2670,67 @@
         "pricingCompletion": "0.00000208",
         "contextLength": 262144
       }
-    ],
-    "rating": 1418,
-    "rank": 64
+    ]
+  },
+  "qwen/qwen3.6-max-preview": {
+    "lmArenaDisplayName": "Qwen3.6 Max",
+    "arenaSlug": "qwen3.6-max-preview",
+    "license": "proprietary",
+    "discoveryDate": "2026-05-03",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-03",
+    "history": [
+      {
+        "date": "2026-05-03",
+        "rating": 1472,
+        "rank": 18
+      }
+    ]
+  },
+  "qwen/qwen3.6-27b": {
+    "lmArenaDisplayName": "Qwen3.6 27B",
+    "arenaSlug": "qwen3.6-27b",
+    "license": "open",
+    "discoveryDate": "2026-05-03",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-03",
+    "history": [
+      {
+        "date": "2026-05-03",
+        "rating": 1395,
+        "rank": 75
+      }
+    ]
+  },
+  "qwen/qwen3.6-35b-a3b": {
+    "lmArenaDisplayName": "Qwen3.6 35B A3B",
+    "arenaSlug": "qwen3.6-35b-a3b",
+    "license": "open",
+    "discoveryDate": "2026-05-03",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-03",
+    "history": [
+      {
+        "date": "2026-05-03",
+        "rating": 1408,
+        "rank": 62
+      }
+    ]
+  },
+  "qwen/qwen3.6-flash": {
+    "lmArenaDisplayName": "Qwen3.6 Flash",
+    "arenaSlug": "qwen3.6-flash",
+    "license": "proprietary",
+    "discoveryDate": "2026-05-03",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-03",
+    "history": [
+      {
+        "date": "2026-05-03",
+        "rating": 1338,
+        "rank": 135
+      }
+    ]
   },
   "qwen/qwen3.6-plus": {
     "lmArenaDisplayName": "Qwen3.6 Plus",
@@ -2764,9 +2756,7 @@
         "pricingCompletion": "0.00000195",
         "contextLength": 1000000
       }
-    ],
-    "rating": 1447,
-    "rank": 22
+    ]
   },
   "qwen/qwen3.5-27b": {
     "lmArenaDisplayName": "Qwen3.5 27B",
@@ -2800,9 +2790,7 @@
         "pricingCompletion": "0.00000156",
         "contextLength": 262144
       }
-    ],
-    "rating": 1405,
-    "rank": 65
+    ]
   },
   "qwen/qwen3.5-35b-a3b": {
     "lmArenaDisplayName": "Qwen3.5 35B A3B",
@@ -2836,9 +2824,7 @@
         "pricingCompletion": "0.0000013",
         "contextLength": 262144
       }
-    ],
-    "rating": 1395,
-    "rank": 67
+    ]
   },
   "qwen/qwen3.5-flash-02-23": {
     "lmArenaDisplayName": "Qwen3.5 Flash",
@@ -2903,9 +2889,7 @@
         "pricingCompletion": "0.00000234",
         "contextLength": 262144
       }
-    ],
-    "rating": 1446,
-    "rank": 24
+    ]
   },
   "qwen/qwen3.5-plus-02-15": {
     "lmArenaDisplayName": "Qwen3.5 Plus (Feb 2025)",
@@ -2944,9 +2928,7 @@
         "pricingCompletion": "0.00000156",
         "contextLength": 1000000
       }
-    ],
-    "rating": 1446,
-    "rank": 24
+    ]
   },
   "qwen/qwen3-235b-a22b": {
     "lmArenaDisplayName": "Qwen3 235B A22B",
@@ -2985,9 +2967,7 @@
         "pricingCompletion": "0.00000182",
         "contextLength": 131072
       }
-    ],
-    "rating": 1375,
-    "rank": 68
+    ]
   },
   "qwen/qwen3-max": {
     "lmArenaDisplayName": "Qwen3 Max",
@@ -3057,9 +3037,7 @@
         "pricingCompletion": "0.00000024",
         "contextLength": 40960
       }
-    ],
-    "rating": 1347,
-    "rank": 72
+    ]
   },
   "qwen/qwen3-30b-a3b": {
     "lmArenaDisplayName": "Qwen3 30B A3B",
@@ -3098,50 +3076,22 @@
         "pricingCompletion": "0.00000045",
         "contextLength": 40960
       }
-    ],
-    "rating": 1328,
-    "rank": 124
+    ]
   },
-  "qwen/qwq-32b": {
-    "lmArenaDisplayName": "QwQ-32B",
-    "arenaSlug": "qwq-32b",
-    "license": "open",
-    "discoveryDate": "2025-03-05",
+  "qwen/qwen3.5-plus-20260420": {
+    "lmArenaDisplayName": "Qwen3.5 Plus (Apr 2026)",
+    "arenaSlug": "qwen3.5-plus-20260420",
+    "license": "proprietary",
+    "discoveryDate": "2026-05-03",
     "isDeprecated": false,
     "lastActiveDate": "2026-05-03",
     "history": [
       {
-        "date": "2025-03-05",
-        "rating": 1336,
-        "rank": 138
-      },
-      {
-        "date": "2026-03-10",
-        "rating": 1336,
-        "rank": 149,
-        "pricingPrompt": "0.00000015",
-        "pricingCompletion": "0.0000004",
-        "contextLength": 32768
-      },
-      {
-        "date": "2026-04-25",
-        "rating": 1336,
-        "rank": 125,
-        "pricingPrompt": "0.00000015",
-        "pricingCompletion": "0.00000058",
-        "contextLength": 131072
-      },
-      {
         "date": "2026-05-03",
-        "rating": 1336,
-        "rank": 71,
-        "pricingPrompt": "0.00000015",
-        "pricingCompletion": "0.00000058",
-        "contextLength": 131072
+        "rating": 1448,
+        "rank": 25
       }
-    ],
-    "rating": 1336,
-    "rank": 71
+    ]
   },
   "qwen/qwen-max": {
     "lmArenaDisplayName": "Qwen2.5 Max",
@@ -3244,6 +3194,21 @@
       }
     ]
   },
+  "x-ai/grok-4.3": {
+    "lmArenaDisplayName": "Grok-4.3",
+    "arenaSlug": "grok-4.3",
+    "license": "proprietary",
+    "discoveryDate": "2026-05-03",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-03",
+    "history": [
+      {
+        "date": "2026-05-03",
+        "rating": 1469,
+        "rank": 15
+      }
+    ]
+  },
   "x-ai/grok-4.1-fast": {
     "lmArenaDisplayName": "Grok-4.1",
     "arenaSlug": "grok-4.1",
@@ -3281,9 +3246,7 @@
         "pricingCompletion": "0.0000005",
         "contextLength": 2000000
       }
-    ],
-    "rating": 1461,
-    "rank": 11
+    ]
   },
   "x-ai/grok-4.20": {
     "lmArenaDisplayName": "Grok-4.20",
@@ -3309,9 +3272,7 @@
         "pricingCompletion": "0.0000025",
         "contextLength": 2000000
       }
-    ],
-    "rating": 1482,
-    "rank": 8
+    ]
   },
   "x-ai/grok-4.20-multi-agent": {
     "lmArenaDisplayName": "Grok-4.20 Multi-Agent",
@@ -3492,9 +3453,7 @@
         "pricingCompletion": "0.00000014",
         "contextLength": 16384
       }
-    ],
-    "rating": 1256,
-    "rank": 91
+    ]
   },
   "nvidia/llama-3.1-nemotron-70b-instruct": {
     "lmArenaDisplayName": "Nemotron-70B",
@@ -3533,9 +3492,7 @@
         "pricingCompletion": "0.0000012",
         "contextLength": 131072
       }
-    ],
-    "rating": 1299,
-    "rank": 92
+    ]
   },
   "amazon/nova-pro-v1": {
     "lmArenaDisplayName": "Amazon Nova Pro",
@@ -3667,9 +3624,48 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
+    ]
+  },
+  "qwen/qwq-32b": {
+    "lmArenaDisplayName": "QwQ-32B",
+    "arenaSlug": "qwq-32b",
+    "license": "open",
+    "discoveryDate": "2025-03-05",
+    "isDeprecated": true,
+    "lastActiveDate": "2026-05-03",
+    "history": [
+      {
+        "date": "2025-03-05",
+        "rating": 1336,
+        "rank": 138
+      },
+      {
+        "date": "2026-03-10",
+        "rating": 1336,
+        "rank": 149,
+        "pricingPrompt": "0.00000015",
+        "pricingCompletion": "0.0000004",
+        "contextLength": 32768
+      },
+      {
+        "date": "2026-04-25",
+        "rating": 1336,
+        "rank": 125,
+        "pricingPrompt": "0.00000015",
+        "pricingCompletion": "0.00000058",
+        "contextLength": 131072
+      },
+      {
+        "date": "2026-05-03",
+        "rating": 1336,
+        "rank": 71,
+        "pricingPrompt": "0.00000015",
+        "pricingCompletion": "0.00000058",
+        "contextLength": 131072
+      }
     ],
-    "rating": 1276,
-    "rank": 96
+    "rating": 1336,
+    "rank": 71
   },
   "anthropic/claude-3.5-sonnet": {
     "lmArenaDisplayName": "Claude 3.5 Sonnet (Oct 2024)",

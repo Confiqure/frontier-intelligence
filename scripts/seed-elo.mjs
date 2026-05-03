@@ -151,6 +151,10 @@ export const DATA = {
 
   // ── Qwen ──────────────────────────────────────────────────────────────────
   "qwen/qwen3.5-122b-a10b":    { lmArenaDisplayName: "Qwen3.5 122B A10B",    arenaSlug: "qwen3.5-122b-a10b",    rating: 1420, rank:  40, license: "open" },
+  "qwen/qwen3.6-max-preview":  { lmArenaDisplayName: "Qwen3.6 Max",         arenaSlug: "qwen3.6-max-preview",  rating: 1472, rank:  18, license: "proprietary" },
+  "qwen/qwen3.6-27b":          { lmArenaDisplayName: "Qwen3.6 27B",         arenaSlug: "qwen3.6-27b",          rating: 1395, rank:  75, license: "open" },
+  "qwen/qwen3.6-35b-a3b":      { lmArenaDisplayName: "Qwen3.6 35B A3B",     arenaSlug: "qwen3.6-35b-a3b",      rating: 1408, rank:  62, license: "open" },
+  "qwen/qwen3.6-flash":        { lmArenaDisplayName: "Qwen3.6 Flash",       arenaSlug: "qwen3.6-flash",        rating: 1338, rank: 135, license: "proprietary" },
   "qwen/qwen3.6-plus":          { lmArenaDisplayName: "Qwen3.6 Plus",          arenaSlug: "qwen3.6-plus",         rating: 1447, rank:  41, license: "proprietary" },
   "qwen/qwen3.5-27b":          { lmArenaDisplayName: "Qwen3.5 27B",          arenaSlug: "qwen3.5-27b",          rating: 1350, rank: 120, license: "open" },
   "qwen/qwen3.5-35b-a3b":      { lmArenaDisplayName: "Qwen3.5 35B A3B",      arenaSlug: "qwen3.5-35b-a3b",      rating: 1360, rank: 110, license: "open" },
@@ -162,12 +166,14 @@ export const DATA = {
   "qwen/qwen3-max":            { lmArenaDisplayName: "Qwen3 Max",            arenaSlug: "qwen3-max-preview",    rating: 1434, rank:  32, license: "proprietary" },
   "qwen/qwen3-32b":            { lmArenaDisplayName: "Qwen3 32B",            arenaSlug: "qwen3-32b",            rating: 1347, rank: 126, license: "open" },
   "qwen/qwen3-30b-a3b":        { lmArenaDisplayName: "Qwen3 30B A3B",        arenaSlug: "qwen3-30b-a3b",        rating: 1328, rank: 148, license: "open" },
-  "qwen/qwq-32b":              { lmArenaDisplayName: "QwQ-32B",              arenaSlug: "qwq-32b",              rating: 1336, rank: 138, license: "open" },
+  "qwen/qwen3.5-plus-20260420":  { lmArenaDisplayName: "Qwen3.5 Plus (Apr 2026)",  arenaSlug: "qwen3.5-plus-20260420",  rating: 1448, rank:  25, license: "proprietary" },
+  // "qwen/qwq-32b":              { lmArenaDisplayName: "QwQ-32B",              arenaSlug: "qwq-32b",              rating: 1336, rank: 138, license: "open" },  // removed 2026-05-03: no longer on OpenRouter
   "qwen/qwen-max":             { lmArenaDisplayName: "Qwen2.5 Max",          arenaSlug: "qwen2.5-max",          rating: 1374, rank:  98, license: "proprietary" },
   "qwen/qwen-plus":            { lmArenaDisplayName: "Qwen Plus (0125)",      arenaSlug: "qwen-plus-0125",       rating: 1346, rank: 128, license: "proprietary" },
   "qwen/qwen-2.5-72b-instruct":{ lmArenaDisplayName: "Qwen2.5 72B Instruct", arenaSlug: "qwen2.5-72b-instruct", rating: 1303, rank: 184, license: "open" },
 
   // ── xAI ───────────────────────────────────────────────────────────────────
+  "x-ai/grok-4.3":             { lmArenaDisplayName: "Grok-4.3",            arenaSlug: "grok-4.3",             rating: 1469, rank:  15, license: "proprietary" },
   "x-ai/grok-4.1-fast": { lmArenaDisplayName: "Grok-4.1",      arenaSlug: "grok-4.1",           rating: 1463, rank:  11, license: "proprietary" },
   "x-ai/grok-4.20":                { lmArenaDisplayName: "Grok-4.20",             arenaSlug: "grok-4.20-beta1",                   rating: 1482, rank:   8, license: "proprietary" },
   "x-ai/grok-4.20-multi-agent":    { lmArenaDisplayName: "Grok-4.20 Multi-Agent", arenaSlug: "grok-4.20-multi-agent-beta-0309",   rating: 1476, rank:  12, license: "proprietary" },
