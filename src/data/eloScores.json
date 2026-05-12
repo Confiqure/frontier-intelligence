@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "seedWrittenAt": "2026-05-03T21:32:28.188Z",
+    "seedWrittenAt": "2026-05-12T13:51:30.957Z",
     "eloRefreshedAt": "2026-05-10T14:00:40.890Z"
   },
   "openai/gpt-4o": {
@@ -40,9 +40,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1287,
-    "rank": 2
+    ]
   },
   "openai/gpt-4o-2024-08-06": {
     "lmArenaDisplayName": "GPT-4o (Aug 2024)",
@@ -89,9 +87,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1266,
-    "rank": 5
+    ]
   },
   "openai/gpt-4o-2024-11-20": {
     "lmArenaDisplayName": "GPT-4o (Nov 2024)",
@@ -138,9 +134,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1266,
-    "rank": 5
+    ]
   },
   "openai/gpt-4o-mini": {
     "lmArenaDisplayName": "GPT-4o mini",
@@ -179,9 +173,22 @@
         "pricingCompletion": "0.0000006",
         "contextLength": 128000
       }
-    ],
-    "rating": 1219,
-    "rank": 18
+    ]
+  },
+  "openai/gpt-chat-latest": {
+    "lmArenaDisplayName": "ChatGPT (latest)",
+    "arenaSlug": "chatgpt-4o-latest",
+    "license": "proprietary",
+    "discoveryDate": "2026-05-12",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-10",
+    "history": [
+      {
+        "date": "2026-05-12",
+        "rating": 1380,
+        "rank": 95
+      }
+    ]
   },
   "openai/gpt-5.4": {
     "lmArenaDisplayName": "GPT-5.4",
@@ -922,9 +929,7 @@
         "pricingCompletion": "0.00003",
         "contextLength": 128000
       }
-    ],
-    "rating": 1243,
-    "rank": 12
+    ]
   },
   "anthropic/claude-3.5-haiku": {
     "lmArenaDisplayName": "Claude 3.5 Haiku",
@@ -994,9 +999,7 @@
         "pricingCompletion": "0.00000125",
         "contextLength": 200000
       }
-    ],
-    "rating": 1178,
-    "rank": 22
+    ]
   },
   "anthropic/claude-3.7-sonnet": {
     "lmArenaDisplayName": "Claude 3.7 Sonnet",
@@ -1425,6 +1428,21 @@
       }
     ]
   },
+  "google/gemini-3.1-flash-lite": {
+    "lmArenaDisplayName": "Gemini 3.1 Flash Lite (GA)",
+    "arenaSlug": "gemini-3.1-flash-lite",
+    "license": "proprietary",
+    "discoveryDate": "2026-05-12",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-10",
+    "history": [
+      {
+        "date": "2026-05-12",
+        "rating": 1385,
+        "rank": 88
+      }
+    ]
+  },
   "google/gemini-3-flash-preview": {
     "lmArenaDisplayName": "Gemini 3 Flash Preview",
     "arenaSlug": "gemini-3-flash",
@@ -1825,9 +1843,7 @@
         "pricingCompletion": "0.00000065",
         "contextLength": 8192
       }
-    ],
-    "rating": 1142,
-    "rank": 43
+    ]
   },
   "meta-llama/llama-4-maverick": {
     "lmArenaDisplayName": "Llama 4 Maverick 17B",
@@ -1975,9 +1991,7 @@
         "pricingCompletion": "0.0000004",
         "contextLength": 131072
       }
-    ],
-    "rating": 1235,
-    "rank": 14
+    ]
   },
   "meta-llama/llama-3.1-8b-instruct": {
     "lmArenaDisplayName": "Llama 3.1 8B Instruct",
@@ -2024,9 +2038,7 @@
         "pricingCompletion": "0.00000005",
         "contextLength": 16384
       }
-    ],
-    "rating": 1135,
-    "rank": 26
+    ]
   },
   "deepseek/deepseek-v3.2": {
     "lmArenaDisplayName": "DeepSeek V3.2",
@@ -2322,9 +2334,7 @@
         "pricingCompletion": "0.00000089",
         "contextLength": 163840
       }
-    ],
-    "rating": 1255,
-    "rank": 9
+    ]
   },
   "deepseek/deepseek-v4-pro": {
     "lmArenaDisplayName": "DeepSeek V4 Pro",
@@ -2414,6 +2424,21 @@
         "pricingPrompt": "0.0000005",
         "pricingCompletion": "0.0000015",
         "contextLength": 262144
+      }
+    ]
+  },
+  "mistralai/mistral-medium-3-5": {
+    "lmArenaDisplayName": "Mistral Medium 3.5",
+    "arenaSlug": "mistral-medium-3-5",
+    "license": "proprietary",
+    "discoveryDate": "2026-05-12",
+    "isDeprecated": false,
+    "lastActiveDate": "2026-05-10",
+    "history": [
+      {
+        "date": "2026-05-12",
+        "rating": 1415,
+        "rank": 53
       }
     ]
   },
@@ -2563,9 +2588,7 @@
         "pricingCompletion": "0.000006",
         "contextLength": 131072
       }
-    ],
-    "rating": 1228,
-    "rank": 16
+    ]
   },
   "mistralai/mistral-large": {
     "lmArenaDisplayName": "Mistral Large (2402)",
@@ -2604,9 +2627,7 @@
         "pricingCompletion": "0.000006",
         "contextLength": 128000
       }
-    ],
-    "rating": 1188,
-    "rank": 60
+    ]
   },
   "mistralai/mistral-small-3.2-24b-instruct": {
     "lmArenaDisplayName": "Mistral Small 3.2",
@@ -2764,9 +2785,7 @@
         "pricingCompletion": "0.000006",
         "contextLength": 65536
       }
-    ],
-    "rating": 1095,
-    "rank": 32
+    ]
   },
   "qwen/qwen3.5-122b-a10b": {
     "lmArenaDisplayName": "Qwen3.5 122B A10B",
@@ -2823,9 +2842,7 @@
         "pricingCompletion": "0.00000624",
         "contextLength": 262144
       }
-    ],
-    "rating": 1472,
-    "rank": 18
+    ]
   },
   "qwen/qwen3.6-27b": {
     "lmArenaDisplayName": "Qwen3.6 27B",
@@ -2848,9 +2865,7 @@
         "pricingCompletion": "0.0000032",
         "contextLength": 262144
       }
-    ],
-    "rating": 1395,
-    "rank": 75
+    ]
   },
   "qwen/qwen3.6-35b-a3b": {
     "lmArenaDisplayName": "Qwen3.6 35B A3B",
@@ -2873,9 +2888,7 @@
         "pricingCompletion": "0.000001",
         "contextLength": 262144
       }
-    ],
-    "rating": 1408,
-    "rank": 62
+    ]
   },
   "qwen/qwen3.6-flash": {
     "lmArenaDisplayName": "Qwen3.6 Flash",
@@ -2898,9 +2911,7 @@
         "pricingCompletion": "0.0000015",
         "contextLength": 1000000
       }
-    ],
-    "rating": 1338,
-    "rank": 135
+    ]
   },
   "qwen/qwen3.6-plus": {
     "lmArenaDisplayName": "Qwen3.6 Plus",
@@ -3002,9 +3013,7 @@
         "pricingCompletion": "0.000001",
         "contextLength": 262144
       }
-    ],
-    "rating": 1395,
-    "rank": 67
+    ]
   },
   "qwen/qwen3.5-flash-02-23": {
     "lmArenaDisplayName": "Qwen3.5 Flash",
@@ -3225,9 +3234,7 @@
         "pricingCompletion": "0.00000028",
         "contextLength": 40960
       }
-    ],
-    "rating": 1347,
-    "rank": 72
+    ]
   },
   "qwen/qwen3-30b-a3b": {
     "lmArenaDisplayName": "Qwen3 30B A3B",
@@ -3289,9 +3296,7 @@
         "pricingCompletion": "0.0000024",
         "contextLength": 1000000
       }
-    ],
-    "rating": 1448,
-    "rank": 25
+    ]
   },
   "qwen/qwen-max": {
     "lmArenaDisplayName": "Qwen2.5 Max",
@@ -3400,9 +3405,7 @@
         "pricingCompletion": "0.0000004",
         "contextLength": 32768
       }
-    ],
-    "rating": 1224,
-    "rank": 17
+    ]
   },
   "x-ai/grok-4.3": {
     "lmArenaDisplayName": "Grok-4.3",
@@ -3425,9 +3428,7 @@
         "pricingCompletion": "0.0000025",
         "contextLength": 1000000
       }
-    ],
-    "rating": 1469,
-    "rank": 15
+    ]
   },
   "x-ai/grok-4.1-fast": {
     "lmArenaDisplayName": "Grok-4.1",
@@ -3675,45 +3676,6 @@
       }
     ]
   },
-  "nvidia/llama-3.1-nemotron-70b-instruct": {
-    "lmArenaDisplayName": "Nemotron-70B",
-    "arenaSlug": "llama-3.1-nemotron-70b-instruct",
-    "license": "open",
-    "discoveryDate": "2024-10-15",
-    "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
-    "history": [
-      {
-        "date": "2024-10-15",
-        "rating": 1299,
-        "rank": 185
-      },
-      {
-        "date": "2026-03-10",
-        "rating": 1299,
-        "rank": 196,
-        "pricingPrompt": "0.0000012",
-        "pricingCompletion": "0.0000012",
-        "contextLength": 131072
-      },
-      {
-        "date": "2026-04-25",
-        "rating": 1299,
-        "rank": 160,
-        "pricingPrompt": "0.0000012",
-        "pricingCompletion": "0.0000012",
-        "contextLength": 131072
-      },
-      {
-        "date": "2026-05-03",
-        "rating": 1299,
-        "rank": 92,
-        "pricingPrompt": "0.0000012",
-        "pricingCompletion": "0.0000012",
-        "contextLength": 131072
-      }
-    ]
-  },
   "amazon/nova-pro-v1": {
     "lmArenaDisplayName": "Amazon Nova Pro",
     "arenaSlug": "amazon-nova-pro-v1.0",
@@ -3843,6 +3805,45 @@
         "pricingPrompt": "0.0000025",
         "pricingCompletion": "0.00001",
         "contextLength": 128000
+      }
+    ]
+  },
+  "nvidia/llama-3.1-nemotron-70b-instruct": {
+    "lmArenaDisplayName": "Nemotron-70B",
+    "arenaSlug": "llama-3.1-nemotron-70b-instruct",
+    "license": "open",
+    "discoveryDate": "2024-10-15",
+    "isDeprecated": true,
+    "lastActiveDate": "2026-05-10",
+    "history": [
+      {
+        "date": "2024-10-15",
+        "rating": 1299,
+        "rank": 185
+      },
+      {
+        "date": "2026-03-10",
+        "rating": 1299,
+        "rank": 196,
+        "pricingPrompt": "0.0000012",
+        "pricingCompletion": "0.0000012",
+        "contextLength": 131072
+      },
+      {
+        "date": "2026-04-25",
+        "rating": 1299,
+        "rank": 160,
+        "pricingPrompt": "0.0000012",
+        "pricingCompletion": "0.0000012",
+        "contextLength": 131072
+      },
+      {
+        "date": "2026-05-03",
+        "rating": 1299,
+        "rank": 92,
+        "pricingPrompt": "0.0000012",
+        "pricingCompletion": "0.0000012",
+        "contextLength": 131072
       }
     ]
   },

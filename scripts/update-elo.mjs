@@ -259,6 +259,18 @@ for (const [slug, entry] of Object.entries(eloScores)) {
 
   let ratingChanged = false;
   if (live && (live.rating !== latestEntry.rating || live.rank !== latestEntry.rank)) {
+    // Sanity check: flag if rank improved significantly while ELO dropped.
+    // This typically means stale/hallucinated arena-data.txt (e.g. a 2024-era model
+    // written at its historical peak rank rather than its current position).
+    if (live.rank < latestEntry.rank && live.rating < latestEntry.rating) {
+      const rankJump = latestEntry.rank - live.rank;
+      if (rankJump > 20) {
+        console.warn(
+          `  ⚠️  Suspicious: ${slug} rank ${latestEntry.rank}→${live.rank} (+${rankJump} pos) while ELO ${latestEntry.rating}→${live.rating} ↓` +
+          ` — verify arena-data.txt (likely stale rank)`
+        );
+      }
+    }
     console.log(
       `  ✦ ${slug.padEnd(50)} ELO ${latestEntry.rating} → ${live.rating}  rank ${latestEntry.rank} → ${live.rank}`
     );
