@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "seedWrittenAt": "2026-05-12T13:51:30.957Z",
+    "seedWrittenAt": "2026-05-12T14:05:59.517Z",
     "eloRefreshedAt": "2026-05-12T13:57:44.763Z"
   },
   "openai/gpt-4o": {
@@ -48,9 +48,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1286,
-    "rank": 235
+    ]
   },
   "openai/gpt-4o-2024-08-06": {
     "lmArenaDisplayName": "GPT-4o (Aug 2024)",
@@ -105,9 +103,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1301,
-    "rank": 79
+    ]
   },
   "openai/gpt-4o-2024-11-20": {
     "lmArenaDisplayName": "GPT-4o (Nov 2024)",
@@ -162,9 +158,7 @@
         "pricingCompletion": "0.00001",
         "contextLength": 128000
       }
-    ],
-    "rating": 1301,
-    "rank": 79
+    ]
   },
   "openai/gpt-4o-mini": {
     "lmArenaDisplayName": "GPT-4o mini",
@@ -211,9 +205,7 @@
         "pricingCompletion": "0.0000006",
         "contextLength": 128000
       }
-    ],
-    "rating": 1219,
-    "rank": 220
+    ]
   },
   "openai/gpt-chat-latest": {
     "lmArenaDisplayName": "ChatGPT (latest)",
@@ -231,9 +223,7 @@
         "pricingCompletion": "0.00003",
         "contextLength": 400000
       }
-    ],
-    "rating": 1380,
-    "rank": 95
+    ]
   },
   "openai/gpt-5.4": {
     "lmArenaDisplayName": "GPT-5.4",
@@ -982,9 +972,7 @@
         "pricingCompletion": "0.00003",
         "contextLength": 128000
       }
-    ],
-    "rating": 1245,
-    "rank": 285
+    ]
   },
   "anthropic/claude-3.5-haiku": {
     "lmArenaDisplayName": "Claude 3.5 Haiku",
@@ -1060,70 +1048,6 @@
         "rank": 280,
         "pricingPrompt": "0.00000025",
         "pricingCompletion": "0.00000125",
-        "contextLength": 200000
-      }
-    ],
-    "rating": 1178,
-    "rank": 280
-  },
-  "anthropic/claude-3.7-sonnet": {
-    "lmArenaDisplayName": "Claude 3.7 Sonnet",
-    "arenaSlug": "claude-3-7-sonnet-20250219",
-    "license": "proprietary",
-    "discoveryDate": "2025-02-19",
-    "isDeprecated": false,
-    "lastActiveDate": "2026-05-12",
-    "history": [
-      {
-        "date": "2025-02-19",
-        "rating": 1372,
-        "rank": 100
-      },
-      {
-        "date": "2026-03-10",
-        "rating": 1371,
-        "rank": 112,
-        "pricingPrompt": "0.000003",
-        "pricingCompletion": "0.000015",
-        "contextLength": 200000
-      },
-      {
-        "date": "2026-04-25",
-        "rating": 1372,
-        "rank": 150,
-        "pricingPrompt": "0.000003",
-        "pricingCompletion": "0.000015",
-        "contextLength": 200000
-      }
-    ]
-  },
-  "anthropic/claude-3.7-sonnet:thinking": {
-    "lmArenaDisplayName": "Claude 3.7 Sonnet (thinking)",
-    "arenaSlug": "claude-3-7-sonnet-20250219-thinking-32k",
-    "license": "proprietary",
-    "discoveryDate": "2025-02-19",
-    "isDeprecated": false,
-    "lastActiveDate": "2026-05-12",
-    "history": [
-      {
-        "date": "2025-02-19",
-        "rating": 1388,
-        "rank": 84
-      },
-      {
-        "date": "2026-03-10",
-        "rating": 1388,
-        "rank": 95,
-        "pricingPrompt": "0.000003",
-        "pricingCompletion": "0.000015",
-        "contextLength": 200000
-      },
-      {
-        "date": "2026-04-25",
-        "rating": 1388,
-        "rank": 151,
-        "pricingPrompt": "0.000003",
-        "pricingCompletion": "0.000015",
         "contextLength": 200000
       }
     ]
@@ -1509,9 +1433,7 @@
         "pricingCompletion": "0.0000015",
         "contextLength": 1048576
       }
-    ],
-    "rating": 1385,
-    "rank": 88
+    ]
   },
   "google/gemini-3-flash-preview": {
     "lmArenaDisplayName": "Gemini 3 Flash Preview",
@@ -1864,9 +1786,7 @@
         "pricingCompletion": "0.00000037",
         "contextLength": 262144
       }
-    ],
-    "rating": 1451,
-    "rank": 32
+    ]
   },
   "google/gemma-4-26b-a4b-it": {
     "lmArenaDisplayName": "Gemma 4 26B A4B",
@@ -1931,9 +1851,7 @@
         "pricingCompletion": "0.00000065",
         "contextLength": 8192
       }
-    ],
-    "rating": 1142,
-    "rank": 340
+    ]
   },
   "meta-llama/llama-4-maverick": {
     "lmArenaDisplayName": "Llama 4 Maverick 17B",
@@ -2042,9 +1960,7 @@
         "pricingCompletion": "0.00000032",
         "contextLength": 131072
       }
-    ],
-    "rating": 1361,
-    "rank": 49
+    ]
   },
   "meta-llama/llama-3.1-70b-instruct": {
     "lmArenaDisplayName": "Llama 3.1 70B Instruct",
@@ -2099,9 +2015,7 @@
         "pricingCompletion": "0.0000004",
         "contextLength": 131072
       }
-    ],
-    "rating": 1327,
-    "rank": 66
+    ]
   },
   "meta-llama/llama-3.1-8b-instruct": {
     "lmArenaDisplayName": "Llama 3.1 8B Instruct",
@@ -2343,9 +2257,7 @@
         "pricingCompletion": "0.00000079",
         "contextLength": 163840
       }
-    ],
-    "rating": 1418,
-    "rank": 75
+    ]
   },
   "deepseek/deepseek-r1": {
     "lmArenaDisplayName": "DeepSeek R1",
@@ -2462,9 +2374,7 @@
         "pricingCompletion": "0.00000089",
         "contextLength": 163840
       }
-    ],
-    "rating": 1255,
-    "rank": 300
+    ]
   },
   "deepseek/deepseek-v4-pro": {
     "lmArenaDisplayName": "DeepSeek V4 Pro",
@@ -2563,9 +2473,7 @@
         "pricingCompletion": "0.0000015",
         "contextLength": 262144
       }
-    ],
-    "rating": 1391,
-    "rank": 34
+    ]
   },
   "mistralai/mistral-medium-3-5": {
     "lmArenaDisplayName": "Mistral Medium 3.5",
@@ -2583,9 +2491,7 @@
         "pricingCompletion": "0.0000075",
         "contextLength": 262144
       }
-    ],
-    "rating": 1415,
-    "rank": 53
+    ]
   },
   "mistralai/mistral-medium-3.1": {
     "lmArenaDisplayName": "Mistral Medium 3.1 (2508)",
@@ -2741,9 +2647,7 @@
         "pricingCompletion": "0.000006",
         "contextLength": 131072
       }
-    ],
-    "rating": 1357,
-    "rank": 51
+    ]
   },
   "mistralai/mistral-large": {
     "lmArenaDisplayName": "Mistral Large (2402)",
@@ -2790,9 +2694,7 @@
         "pricingCompletion": "0.000006",
         "contextLength": 128000
       }
-    ],
-    "rating": 1280,
-    "rank": 241
+    ]
   },
   "mistralai/mistral-small-3.2-24b-instruct": {
     "lmArenaDisplayName": "Mistral Small 3.2",
@@ -3578,9 +3480,7 @@
         "pricingCompletion": "0.0000004",
         "contextLength": 32768
       }
-    ],
-    "rating": 1224,
-    "rank": 210
+    ]
   },
   "x-ai/grok-4.3": {
     "lmArenaDisplayName": "Grok-4.3",
@@ -3980,6 +3880,68 @@
         "pricingPrompt": "0.0000025",
         "pricingCompletion": "0.00001",
         "contextLength": 128000
+      }
+    ]
+  },
+  "anthropic/claude-3.7-sonnet": {
+    "lmArenaDisplayName": "Claude 3.7 Sonnet",
+    "arenaSlug": "claude-3-7-sonnet-20250219",
+    "license": "proprietary",
+    "discoveryDate": "2025-02-19",
+    "isDeprecated": true,
+    "lastActiveDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2025-02-19",
+        "rating": 1372,
+        "rank": 100
+      },
+      {
+        "date": "2026-03-10",
+        "rating": 1371,
+        "rank": 112,
+        "pricingPrompt": "0.000003",
+        "pricingCompletion": "0.000015",
+        "contextLength": 200000
+      },
+      {
+        "date": "2026-04-25",
+        "rating": 1372,
+        "rank": 150,
+        "pricingPrompt": "0.000003",
+        "pricingCompletion": "0.000015",
+        "contextLength": 200000
+      }
+    ]
+  },
+  "anthropic/claude-3.7-sonnet:thinking": {
+    "lmArenaDisplayName": "Claude 3.7 Sonnet (thinking)",
+    "arenaSlug": "claude-3-7-sonnet-20250219-thinking-32k",
+    "license": "proprietary",
+    "discoveryDate": "2025-02-19",
+    "isDeprecated": true,
+    "lastActiveDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2025-02-19",
+        "rating": 1388,
+        "rank": 84
+      },
+      {
+        "date": "2026-03-10",
+        "rating": 1388,
+        "rank": 95,
+        "pricingPrompt": "0.000003",
+        "pricingCompletion": "0.000015",
+        "contextLength": 200000
+      },
+      {
+        "date": "2026-04-25",
+        "rating": 1388,
+        "rank": 151,
+        "pricingPrompt": "0.000003",
+        "pricingCompletion": "0.000015",
+        "contextLength": 200000
       }
     ]
   },

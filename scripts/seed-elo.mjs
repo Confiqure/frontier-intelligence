@@ -84,8 +84,8 @@ export const DATA = {
   // "anthropic/claude-3.5-sonnet":          { lmArenaDisplayName: "Claude 3.5 Sonnet (Oct 2024)",  arenaSlug: "claude-3-5-sonnet-20241022",              rating: 1373, rank:  99, license: "proprietary" },
   "anthropic/claude-3.5-haiku":           { lmArenaDisplayName: "Claude 3.5 Haiku",              arenaSlug: "claude-3-5-haiku-20241022",               rating: 1324, rank: 153, license: "proprietary" },
   "anthropic/claude-3-haiku":             { lmArenaDisplayName: "Claude 3 Haiku",                arenaSlug: "claude-3-haiku-20240307",                 rating: 1261, rank: 213, license: "proprietary" },
-  "anthropic/claude-3.7-sonnet":          { lmArenaDisplayName: "Claude 3.7 Sonnet",             arenaSlug: "claude-3-7-sonnet-20250219",              rating: 1372, rank: 100, license: "proprietary" },
-  "anthropic/claude-3.7-sonnet:thinking": { lmArenaDisplayName: "Claude 3.7 Sonnet (thinking)",  arenaSlug: "claude-3-7-sonnet-20250219-thinking-32k", rating: 1388, rank:  84, license: "proprietary" },
+  // "anthropic/claude-3.7-sonnet":          { lmArenaDisplayName: "Claude 3.7 Sonnet",             arenaSlug: "claude-3-7-sonnet-20250219",              rating: 1372, rank: 100, license: "proprietary" },  // removed 2026-05-12: no longer on OpenRouter
+  // "anthropic/claude-3.7-sonnet:thinking": { lmArenaDisplayName: "Claude 3.7 Sonnet (thinking)",  arenaSlug: "claude-3-7-sonnet-20250219-thinking-32k", rating: 1388, rank:  84, license: "proprietary" },  // removed 2026-05-12: no longer on OpenRouter
   "anthropic/claude-opus-4":              { lmArenaDisplayName: "Claude Opus 4 (May 2025)",      arenaSlug: "claude-opus-4-20250514",                  rating: 1413, rank:  57, license: "proprietary" },
   "anthropic/claude-opus-4.1":            { lmArenaDisplayName: "Claude Opus 4.1 (Aug 2025)",    arenaSlug: "claude-opus-4-1-20250805",                rating: 1446, rank:  23, license: "proprietary" },
   "anthropic/claude-opus-4.5":            { lmArenaDisplayName: "Claude Opus 4.5 (Nov 2025)",    arenaSlug: "claude-opus-4-5-20251101",                rating: 1467, rank:   9, license: "proprietary" },
