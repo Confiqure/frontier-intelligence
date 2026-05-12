@@ -1,7 +1,7 @@
 {
   "_meta": {
     "seedWrittenAt": "2026-05-12T13:51:30.957Z",
-    "eloRefreshedAt": "2026-05-10T14:00:40.890Z"
+    "eloRefreshedAt": "2026-05-12T13:57:44.763Z"
   },
   "openai/gpt-4o": {
     "lmArenaDisplayName": "GPT-4o",
@@ -9,7 +9,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-05-13",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-05-13",
@@ -39,8 +39,18 @@
         "pricingPrompt": "0.0000025",
         "pricingCompletion": "0.00001",
         "contextLength": 128000
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1286,
+        "rank": 235,
+        "pricingPrompt": "0.0000025",
+        "pricingCompletion": "0.00001",
+        "contextLength": 128000
       }
-    ]
+    ],
+    "rating": 1286,
+    "rank": 235
   },
   "openai/gpt-4o-2024-08-06": {
     "lmArenaDisplayName": "GPT-4o (Aug 2024)",
@@ -48,7 +58,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-08-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-08-01",
@@ -86,8 +96,18 @@
         "pricingPrompt": "0.0000025",
         "pricingCompletion": "0.00001",
         "contextLength": 128000
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1301,
+        "rank": 79,
+        "pricingPrompt": "0.0000025",
+        "pricingCompletion": "0.00001",
+        "contextLength": 128000
       }
-    ]
+    ],
+    "rating": 1301,
+    "rank": 79
   },
   "openai/gpt-4o-2024-11-20": {
     "lmArenaDisplayName": "GPT-4o (Nov 2024)",
@@ -95,7 +115,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-08-06",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-08-06",
@@ -133,8 +153,18 @@
         "pricingPrompt": "0.0000025",
         "pricingCompletion": "0.00001",
         "contextLength": 128000
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1301,
+        "rank": 79,
+        "pricingPrompt": "0.0000025",
+        "pricingCompletion": "0.00001",
+        "contextLength": 128000
       }
-    ]
+    ],
+    "rating": 1301,
+    "rank": 79
   },
   "openai/gpt-4o-mini": {
     "lmArenaDisplayName": "GPT-4o mini",
@@ -142,7 +172,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-07-18",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-07-18",
@@ -172,8 +202,18 @@
         "pricingPrompt": "0.00000015",
         "pricingCompletion": "0.0000006",
         "contextLength": 128000
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1219,
+        "rank": 220,
+        "pricingPrompt": "0.00000015",
+        "pricingCompletion": "0.0000006",
+        "contextLength": 128000
       }
-    ]
+    ],
+    "rating": 1219,
+    "rank": 220
   },
   "openai/gpt-chat-latest": {
     "lmArenaDisplayName": "ChatGPT (latest)",
@@ -181,14 +221,19 @@
     "license": "proprietary",
     "discoveryDate": "2026-05-12",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-12",
         "rating": 1380,
-        "rank": 95
+        "rank": 95,
+        "pricingPrompt": "0.000005",
+        "pricingCompletion": "0.00003",
+        "contextLength": 400000
       }
-    ]
+    ],
+    "rating": 1380,
+    "rank": 95
   },
   "openai/gpt-5.4": {
     "lmArenaDisplayName": "GPT-5.4",
@@ -196,7 +241,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-03-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-03-05",
@@ -230,7 +275,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-03-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-03-05",
@@ -256,7 +301,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-04-14",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-14",
@@ -287,7 +332,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-04-14",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-14",
@@ -318,7 +363,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-04-14",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-14",
@@ -349,7 +394,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-12-17",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-12-17",
@@ -380,7 +425,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-01-31",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-01-31",
@@ -419,7 +464,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-02-12",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-12",
@@ -458,7 +503,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-04-16",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-16",
@@ -489,7 +534,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-04-16",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-16",
@@ -520,7 +565,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-08-07",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-08-07",
@@ -551,7 +596,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-11-13",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-11-13",
@@ -590,7 +635,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-12-10",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-12-10",
@@ -629,7 +674,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-08-07",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-08-07",
@@ -660,7 +705,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-08-07",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-08-07",
@@ -683,7 +728,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-10-06",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-10-06",
@@ -714,7 +759,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-12-10",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-12-10",
@@ -745,7 +790,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -763,7 +808,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -781,7 +826,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -807,7 +852,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -833,7 +878,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -859,7 +904,7 @@
     "license": "open",
     "discoveryDate": "2025-08-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-08-05",
@@ -898,7 +943,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-04-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-04-01",
@@ -928,8 +973,18 @@
         "pricingPrompt": "0.00001",
         "pricingCompletion": "0.00003",
         "contextLength": 128000
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1245,
+        "rank": 285,
+        "pricingPrompt": "0.00001",
+        "pricingCompletion": "0.00003",
+        "contextLength": 128000
       }
-    ]
+    ],
+    "rating": 1245,
+    "rank": 285
   },
   "anthropic/claude-3.5-haiku": {
     "lmArenaDisplayName": "Claude 3.5 Haiku",
@@ -937,7 +992,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-10-22",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-10-22",
@@ -968,7 +1023,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-03-07",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-03-07",
@@ -998,8 +1053,18 @@
         "pricingPrompt": "0.00000025",
         "pricingCompletion": "0.00000125",
         "contextLength": 200000
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1178,
+        "rank": 280,
+        "pricingPrompt": "0.00000025",
+        "pricingCompletion": "0.00000125",
+        "contextLength": 200000
       }
-    ]
+    ],
+    "rating": 1178,
+    "rank": 280
   },
   "anthropic/claude-3.7-sonnet": {
     "lmArenaDisplayName": "Claude 3.7 Sonnet",
@@ -1007,7 +1072,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-02-19",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-19",
@@ -1038,7 +1103,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-02-19",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-19",
@@ -1069,7 +1134,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-05-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-05-01",
@@ -1100,7 +1165,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-08-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-08-01",
@@ -1131,7 +1196,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-11-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-11-01",
@@ -1162,7 +1227,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-02-04",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-04",
@@ -1201,7 +1266,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -1227,7 +1292,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -1245,7 +1310,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-05-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-05-01",
@@ -1276,7 +1341,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-09-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-09-01",
@@ -1307,7 +1372,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-02-17",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-17",
@@ -1338,7 +1403,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-10-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-10-01",
@@ -1369,7 +1434,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-02-19",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-19",
@@ -1400,7 +1465,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-03-03",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-03-03",
@@ -1434,14 +1499,19 @@
     "license": "proprietary",
     "discoveryDate": "2026-05-12",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-12",
         "rating": 1385,
-        "rank": 88
+        "rank": 88,
+        "pricingPrompt": "0.00000025",
+        "pricingCompletion": "0.0000015",
+        "contextLength": 1048576
       }
-    ]
+    ],
+    "rating": 1385,
+    "rank": 88
   },
   "google/gemini-3-flash-preview": {
     "lmArenaDisplayName": "Gemini 3 Flash Preview",
@@ -1449,7 +1519,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-12-17",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-12-17",
@@ -1480,7 +1550,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-06-17",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-06-17",
@@ -1519,7 +1589,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-06-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-06-05",
@@ -1558,7 +1628,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-06-17",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-06-17",
@@ -1597,7 +1667,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-02-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-05",
@@ -1636,7 +1706,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-02-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-25",
@@ -1667,7 +1737,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-07-22",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-07-22",
@@ -1698,7 +1768,7 @@
     "license": "open",
     "discoveryDate": "2025-03-12",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-03-12",
@@ -1737,7 +1807,7 @@
     "license": "open",
     "discoveryDate": "2025-03-13",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-03-13",
@@ -1776,7 +1846,7 @@
     "license": "open",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -1785,8 +1855,18 @@
         "pricingPrompt": "0.00000013",
         "pricingCompletion": "0.00000038",
         "contextLength": 262144
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1451,
+        "rank": 32,
+        "pricingPrompt": "0.00000012",
+        "pricingCompletion": "0.00000037",
+        "contextLength": 262144
       }
-    ]
+    ],
+    "rating": 1451,
+    "rank": 32
   },
   "google/gemma-4-26b-a4b-it": {
     "lmArenaDisplayName": "Gemma 4 26B A4B",
@@ -1794,7 +1874,7 @@
     "license": "open",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -1812,7 +1892,7 @@
     "license": "open",
     "discoveryDate": "2024-07-13",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-07-13",
@@ -1842,8 +1922,18 @@
         "pricingPrompt": "0.00000065",
         "pricingCompletion": "0.00000065",
         "contextLength": 8192
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1142,
+        "rank": 340,
+        "pricingPrompt": "0.00000065",
+        "pricingCompletion": "0.00000065",
+        "contextLength": 8192
       }
-    ]
+    ],
+    "rating": 1142,
+    "rank": 340
   },
   "meta-llama/llama-4-maverick": {
     "lmArenaDisplayName": "Llama 4 Maverick 17B",
@@ -1851,7 +1941,7 @@
     "license": "open",
     "discoveryDate": "2025-04-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-05",
@@ -1882,7 +1972,7 @@
     "license": "open",
     "discoveryDate": "2025-04-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-05",
@@ -1913,7 +2003,7 @@
     "license": "open",
     "discoveryDate": "2024-12-06",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-12-06",
@@ -1943,8 +2033,18 @@
         "pricingPrompt": "0.0000001",
         "pricingCompletion": "0.00000032",
         "contextLength": 131072
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1361,
+        "rank": 49,
+        "pricingPrompt": "0.0000001",
+        "pricingCompletion": "0.00000032",
+        "contextLength": 131072
       }
-    ]
+    ],
+    "rating": 1361,
+    "rank": 49
   },
   "meta-llama/llama-3.1-70b-instruct": {
     "lmArenaDisplayName": "Llama 3.1 70B Instruct",
@@ -1952,7 +2052,7 @@
     "license": "open",
     "discoveryDate": "2024-07-23",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-07-23",
@@ -1990,8 +2090,18 @@
         "pricingPrompt": "0.0000004",
         "pricingCompletion": "0.0000004",
         "contextLength": 131072
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1327,
+        "rank": 66,
+        "pricingPrompt": "0.0000004",
+        "pricingCompletion": "0.0000004",
+        "contextLength": 131072
       }
-    ]
+    ],
+    "rating": 1327,
+    "rank": 66
   },
   "meta-llama/llama-3.1-8b-instruct": {
     "lmArenaDisplayName": "Llama 3.1 8B Instruct",
@@ -1999,7 +2109,7 @@
     "license": "open",
     "discoveryDate": "2024-07-23",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-07-23",
@@ -2046,7 +2156,7 @@
     "license": "open",
     "discoveryDate": "2025-12-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-12-01",
@@ -2085,7 +2195,7 @@
     "license": "open",
     "discoveryDate": "2025-09-29",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-09-29",
@@ -2124,7 +2234,7 @@
     "license": "open",
     "discoveryDate": "2025-05-28",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-05-28",
@@ -2163,7 +2273,7 @@
     "license": "open",
     "discoveryDate": "2025-09-22",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-09-22",
@@ -2202,7 +2312,7 @@
     "license": "open",
     "discoveryDate": "2025-08-21",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-08-21",
@@ -2224,8 +2334,18 @@
         "pricingPrompt": "0.00000015",
         "pricingCompletion": "0.00000075",
         "contextLength": 32768
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1418,
+        "rank": 75,
+        "pricingPrompt": "0.00000021",
+        "pricingCompletion": "0.00000079",
+        "contextLength": 163840
       }
-    ]
+    ],
+    "rating": 1418,
+    "rank": 75
   },
   "deepseek/deepseek-r1": {
     "lmArenaDisplayName": "DeepSeek R1",
@@ -2233,7 +2353,7 @@
     "license": "open",
     "discoveryDate": "2025-01-20",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-01-20",
@@ -2272,7 +2392,7 @@
     "license": "open",
     "discoveryDate": "2025-03-24",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-03-24",
@@ -2303,7 +2423,7 @@
     "license": "open",
     "discoveryDate": "2024-12-26",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-12-26",
@@ -2333,8 +2453,18 @@
         "pricingPrompt": "0.00000032",
         "pricingCompletion": "0.00000089",
         "contextLength": 163840
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1255,
+        "rank": 300,
+        "pricingPrompt": "0.00000032",
+        "pricingCompletion": "0.00000089",
+        "contextLength": 163840
       }
-    ]
+    ],
+    "rating": 1255,
+    "rank": 300
   },
   "deepseek/deepseek-v4-pro": {
     "lmArenaDisplayName": "DeepSeek V4 Pro",
@@ -2342,7 +2472,7 @@
     "license": "open",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -2376,7 +2506,7 @@
     "license": "open",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -2402,7 +2532,7 @@
     "license": "open",
     "discoveryDate": "2025-12-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-12-01",
@@ -2424,8 +2554,18 @@
         "pricingPrompt": "0.0000005",
         "pricingCompletion": "0.0000015",
         "contextLength": 262144
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1391,
+        "rank": 34,
+        "pricingPrompt": "0.0000005",
+        "pricingCompletion": "0.0000015",
+        "contextLength": 262144
       }
-    ]
+    ],
+    "rating": 1391,
+    "rank": 34
   },
   "mistralai/mistral-medium-3-5": {
     "lmArenaDisplayName": "Mistral Medium 3.5",
@@ -2433,14 +2573,19 @@
     "license": "proprietary",
     "discoveryDate": "2026-05-12",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-12",
         "rating": 1415,
-        "rank": 53
+        "rank": 53,
+        "pricingPrompt": "0.0000015",
+        "pricingCompletion": "0.0000075",
+        "contextLength": 262144
       }
-    ]
+    ],
+    "rating": 1415,
+    "rank": 53
   },
   "mistralai/mistral-medium-3.1": {
     "lmArenaDisplayName": "Mistral Medium 3.1 (2508)",
@@ -2448,7 +2593,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-08-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-08-01",
@@ -2479,7 +2624,7 @@
     "license": "open",
     "discoveryDate": "2025-05-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-05-01",
@@ -2510,7 +2655,7 @@
     "license": "open",
     "discoveryDate": "2024-11-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-11-01",
@@ -2549,7 +2694,7 @@
     "license": "open",
     "discoveryDate": "2024-07-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-07-01",
@@ -2587,8 +2732,18 @@
         "pricingPrompt": "0.000002",
         "pricingCompletion": "0.000006",
         "contextLength": 131072
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1357,
+        "rank": 51,
+        "pricingPrompt": "0.000002",
+        "pricingCompletion": "0.000006",
+        "contextLength": 131072
       }
-    ]
+    ],
+    "rating": 1357,
+    "rank": 51
   },
   "mistralai/mistral-large": {
     "lmArenaDisplayName": "Mistral Large (2402)",
@@ -2596,7 +2751,7 @@
     "license": "open",
     "discoveryDate": "2024-02-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-02-01",
@@ -2626,8 +2781,18 @@
         "pricingPrompt": "0.000002",
         "pricingCompletion": "0.000006",
         "contextLength": 128000
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1280,
+        "rank": 241,
+        "pricingPrompt": "0.000002",
+        "pricingCompletion": "0.000006",
+        "contextLength": 128000
       }
-    ]
+    ],
+    "rating": 1280,
+    "rank": 241
   },
   "mistralai/mistral-small-3.2-24b-instruct": {
     "lmArenaDisplayName": "Mistral Small 3.2",
@@ -2635,7 +2800,7 @@
     "license": "open",
     "discoveryDate": "2025-06-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-06-01",
@@ -2666,7 +2831,7 @@
     "license": "open",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -2692,7 +2857,7 @@
     "license": "open",
     "discoveryDate": "2025-03-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-03-01",
@@ -2723,7 +2888,7 @@
     "license": "open",
     "discoveryDate": "2025-01-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-01-01",
@@ -2754,7 +2919,7 @@
     "license": "open",
     "discoveryDate": "2024-04-17",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-04-17",
@@ -2793,7 +2958,7 @@
     "license": "open",
     "discoveryDate": "2026-02-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-25",
@@ -2827,7 +2992,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-05-03",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-03",
@@ -2850,7 +3015,7 @@
     "license": "open",
     "discoveryDate": "2026-05-03",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-03",
@@ -2873,7 +3038,7 @@
     "license": "open",
     "discoveryDate": "2026-05-03",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-03",
@@ -2896,7 +3061,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-05-03",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-03",
@@ -2919,7 +3084,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -2945,7 +3110,7 @@
     "license": "open",
     "discoveryDate": "2026-02-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-25",
@@ -2979,7 +3144,7 @@
     "license": "open",
     "discoveryDate": "2026-02-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-25",
@@ -3021,7 +3186,7 @@
     "license": "open",
     "discoveryDate": "2026-02-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-25",
@@ -3047,7 +3212,7 @@
     "license": "open",
     "discoveryDate": "2026-02-16",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-02-16",
@@ -3086,7 +3251,7 @@
     "license": "open",
     "discoveryDate": "2025-02-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-01",
@@ -3125,7 +3290,7 @@
     "license": "open",
     "discoveryDate": "2025-04-28",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-28",
@@ -3164,7 +3329,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-09-23",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-09-23",
@@ -3195,7 +3360,7 @@
     "license": "open",
     "discoveryDate": "2025-04-28",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-28",
@@ -3242,7 +3407,7 @@
     "license": "open",
     "discoveryDate": "2025-04-28",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-04-28",
@@ -3281,7 +3446,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-05-03",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-03",
@@ -3304,7 +3469,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-02-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-01",
@@ -3335,7 +3500,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-02-01",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-02-01",
@@ -3366,7 +3531,7 @@
     "license": "open",
     "discoveryDate": "2024-09-19",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-09-19",
@@ -3404,8 +3569,18 @@
         "pricingPrompt": "0.00000036",
         "pricingCompletion": "0.0000004",
         "contextLength": 32768
+      },
+      {
+        "date": "2026-05-12",
+        "rating": 1224,
+        "rank": 210,
+        "pricingPrompt": "0.00000036",
+        "pricingCompletion": "0.0000004",
+        "contextLength": 32768
       }
-    ]
+    ],
+    "rating": 1224,
+    "rank": 210
   },
   "x-ai/grok-4.3": {
     "lmArenaDisplayName": "Grok-4.3",
@@ -3413,7 +3588,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-05-03",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-05-03",
@@ -3436,7 +3611,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-11-19",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-11-19",
@@ -3475,7 +3650,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -3501,7 +3676,7 @@
     "license": "proprietary",
     "discoveryDate": "2026-04-25",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2026-04-25",
@@ -3519,7 +3694,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-09-19",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-09-19",
@@ -3550,7 +3725,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-07-09",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-07-09",
@@ -3581,7 +3756,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-06-10",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-06-10",
@@ -3612,7 +3787,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-06-10",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-06-10",
@@ -3643,7 +3818,7 @@
     "license": "open",
     "discoveryDate": "2025-01-10",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-01-10",
@@ -3682,7 +3857,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-12-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-12-05",
@@ -3713,7 +3888,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-12-05",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-12-05",
@@ -3744,7 +3919,7 @@
     "license": "proprietary",
     "discoveryDate": "2025-03-13",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2025-03-13",
@@ -3775,7 +3950,7 @@
     "license": "proprietary",
     "discoveryDate": "2024-08-30",
     "isDeprecated": false,
-    "lastActiveDate": "2026-05-10",
+    "lastActiveDate": "2026-05-12",
     "history": [
       {
         "date": "2024-08-30",
